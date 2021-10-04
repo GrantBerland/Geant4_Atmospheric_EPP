@@ -1,0 +1,43 @@
+
+# 0 - energy deposition per altitude (histogram)
+# 1 - particle trajectory (x, y, z, E) (warning, lots of data!!!)
+# 2 - tracks spectra and 2D position info of backscattered photons and particles
+# 3 - electron histogram and photon trajectory
+/dataCollection/setDataCollection 3 
+
+# 10 - RungeKutta w/ PrinceDormand method, 7-8
+/field/setStepperType 10
+
+# 0 - electrons
+# 1 - solar X-ray spectrum
+# 2 - CXB (Cosmic X-ray Background)
+/energy/setSourceType 0
+
+# Set file name for histogram or results file
+/dataCollection/setHistFileName empty.txt
+
+/dataCollection/setPhotonFileName photon_data_inverse{E0}keV_1e6.csv
+
+# 0 = sin(x) distribution
+# 1 = sin^2(x) distribution
+# 2 = isotropic PAD
+# 3 = all particles have pitch angle = maximum pitch angle, set above
+# 4 = particle pitch angles are read in from pitchAngleFile.csv in [deg]
+/energy/setPitchAngleDistributionType 2 
+
+# Loss cone at 1000 km: 49.4 deg (Earth)
+# Loss cone at 300 km: 61.45 deg (Earth)
+/energy/setMaximumPitchAngle 50.  # [deg]
+
+/energy/particleStartingAltitude 500.  # [km A1B]
+
+# 0 = exponential 
+# 1 = monoenergetic
+# 2 = energies are read in from energyFile.csv in [keV]
+/energy/setEnergyDistributionType 1 
+
+# Either exponential folding energy or monoenergetic energy
+/energy/setFoldingEnergy {E0} # [keV]
+
+# Number of particles to run 
+/run/beamOn 100

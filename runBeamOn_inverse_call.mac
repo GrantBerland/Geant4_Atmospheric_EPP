@@ -1,0 +1,24 @@
+
+# Set low energy EM processes, including fluorescence
+#/process/em/fluo true
+#/process/em/auger false
+#/process/em/augerCascade false
+#/process/em/pixe true
+#/process/em/deexcitationIgnoreCut false
+
+
+#/cuts/setMaxCutEnergy 50 eV
+
+# Set file name for atmosphere table
+/dataCollection/setAtmosFileName MSISE00_atmosphere.csv 
+
+/run/initialize
+
+/control/verbose 0
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+
+
+/control/foreach runBeamOn_inverse.mac E0 100 300 1000 3000 10000
+
