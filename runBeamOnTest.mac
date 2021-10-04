@@ -20,7 +20,7 @@
 #/cuts/setMaxCutEnergy 50 eV
 
 # Set file name for atmosphere table
-/dataCollection/setAtmosFileName MSISE00_atmosphere.csv 
+/dataCollection/setAtmosFileName Jupiter_atmosphere.csv
 
 /run/initialize
 
@@ -45,12 +45,12 @@
 /energy/setSourceType 0
 
 # Set file name for histogram or results file
-/dataCollection/setHistFileName empty.txt
+/dataCollection/setHistFileName test2_jupiter.txt
 
-/dataCollection/setPhotonFileName photon_data_forward{E0}keV_1e6.csv
+/dataCollection/setPhotonFileName photon_traj_Jupiter2.csv
 
 # 0 = sin(x) distribution
-# 1 = sin^2(x) distribution
+# 1 = sin(2x) distribution
 # 2 = isotropic PAD
 # 3 = all particles have pitch angle = maximum pitch angle, set above
 # 4 = particle pitch angles are read in from pitchAngleFile.csv in [deg]
@@ -62,13 +62,16 @@
 
 /energy/particleStartingAltitude 500.  # [km A1B]
 
+
+/dataCollection/SetPhotonWindow 250.   # [km A1B]
+
 # 0 = exponential 
 # 1 = monoenergetic
 # 2 = energies are read in from energyFile.csv in [keV]
-/energy/setEnergyDistributionType 0 
+/energy/setEnergyDistributionType 2 
 
 # Either exponential folding energy or monoenergetic energy
-/energy/setFoldingEnergy {E0} # [keV]
+/energy/setFoldingEnergy 500. # [keV]
 
 # Number of particles to run 
-/run/beamOn 1000000
+/run/beamOn 2

@@ -43,7 +43,7 @@
 #include "G4AutoLock.hh"
 
 // Initialize autolock for multiple threads writing into a single file
-//namespace{ G4Mutex aMutex=G4MUTEX_INITIALIZER;} 
+namespace{ G4Mutex aMutex=G4MUTEX_INITIALIZER; } 
 
 SteppingAction::SteppingAction(EventAction* eventAction, RunAction* RuAct)
 : G4UserSteppingAction(),
@@ -51,7 +51,8 @@ SteppingAction::SteppingAction(EventAction* eventAction, RunAction* RuAct)
   fRunAction(RuAct),
   fEnergyThreshold_keV(0.),
   fDataCollectionType(0),
-  fSteppingMessenger()
+  fSteppingMessenger(),
+  fPhotonFilename()
 {
 
   fSteppingMessenger = new SteppingActionMessenger(this);
@@ -73,6 +74,10 @@ SteppingAction::SteppingAction(EventAction* eventAction, RunAction* RuAct)
       G4cout << "Particle backscatter flux being recorded..." << G4endl;
       break;
 
+    case(3):
+      G4cout << "Photon data begin recorded..." << G4endl;
+      break;
+    
     default:
       throw std::invalid_argument("No data being recorded, exiting...");
       break;
@@ -154,14 +159,14 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 				  partEnergy/keV};
         // Writes 3D position vector to results file
 	// owned by RunAction
-        fRunAction->fEnergyHist->WriteDirectlyToFile("photon_part_traj.txt", 
+        fRunAction->fEnergyHist->WriteDirectlyToFile(fPhotonFilename, 
 			                             pos_array,
 				sizeof(pos_array)/sizeof(*pos_array));
       
       }
       break;
     }
-    case(2):
+    case(2): // Electron and photon backscatter tracking WIP
     {  
       G4String particleName = 
 	  track->GetDynamicParticle()->GetDefinition()->GetParticleName();
@@ -180,6 +185,49 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
       
       break;
     }
+
+    case(3): // Photon tracking at 500 km altitude for precipitation inversion method
+    {
+
+      // Check if particle is a photon (most restrictive check)
+      if(track->GetDynamicParticle()->GetDefinition()->GetParticleName() == "gamma")
+      {
+	
+	// If particle is a photon, check that its altitude is at or greater than AEPEX altitude      
+	// (less restrictive check)
+	const G4ThreeVector position = track->GetPosition();
+        
+	if(position.z()/km > 0.) // AEPEX altitude of +500 km ASL
+	{
+
+	   // Lock scope to stop threads from overwriting data in same file
+	   G4AutoLock lock(&aMutex); 
+
+	   const G4ThreeVector momentumDirection = track->GetMomentumDirection();
+
+	   const G4double partEnergy =  step->GetPreStepPoint()->GetKineticEnergy();
+
+	   // Write data to file
+	   std::ofstream dataFile;
+	   dataFile.open(fPhotonFilename, std::ios_base::app);
+
+	   dataFile << position.x()/m << ',' 
+		    << position.y()/m << ','
+		    << position.z()/m << ','
+		    << momentumDirection.x() * partEnergy/keV << ','
+		    << momentumDirection.y() * partEnergy/keV << ','
+		    << momentumDirection.z() * partEnergy/keV << '\n'; 
+
+	   dataFile.close();
+
+	   // Kill photon after data collection to save processing time
+	   track->SetTrackStatus(fStopAndKill);
+	}
+      }
+
+      break;
+    }
+
     default: 
       throw std::runtime_error("Enter a valid data collection type!");
       break;

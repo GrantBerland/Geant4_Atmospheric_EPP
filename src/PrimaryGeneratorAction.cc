@@ -114,15 +114,22 @@ void PrimaryGeneratorAction::GenerateElectrons(ParticleSample* r)
     case(0): 
       // Sine distribution inverse CDF sampling
       // pitch angle ~ sine[0, maxPitchAngle]
-      pitchAngle = std::acos(G4UniformRand()*2.-1.)
-	      /3.141592654/maxPitchAngle;
+      pitchAngle = 4 * maxPitchAngle / fPI * std::asin(std::sqrt(G4UniformRand()/2.));
+
       break;
    
     case(1):
-      // Sine(2x) distribution inverse CDF sampling
+      // Sine^2(x) distribution inverse CDF sampling
       // pitch angle ~ sine[0, maxPitchAngle/2]
-      pitchAngle = std::acos(G4UniformRand()*2.-1.)
-	      /3.141592654/maxPitchAngle/2.;
+      pitchAngle = std::acos(G4UniformRand()*2.-1.)/3.141592654/maxPitchAngle/2.;
+      
+      do
+      {
+        pitchAngle = G4UniformRand() * maxPitchAngle;
+      }
+      while( (G4UniformRand() * 2.) >= 
+		2. / maxPitchAngle * std::pow(std::sin(pitchAngle * fPI / (2. * maxPitchAngle)), 2) );
+
       break;
 
     case(2):

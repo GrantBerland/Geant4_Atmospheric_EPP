@@ -54,6 +54,7 @@ class SteppingAction : public G4UserSteppingAction
     virtual ~SteppingAction();
 
     void SetDataCollection(G4int type){ fDataCollectionType = type; }; 
+    void SetPhotonFilename(G4String name){ fPhotonFilename = name; }; 
     
     void LogEnergy(G4int, G4double);    
     
@@ -65,6 +66,7 @@ class SteppingAction : public G4UserSteppingAction
     RunAction*    fRunAction;
     G4double      fEnergyThreshold_keV;
     G4int         fDataCollectionType;
+    G4String      fPhotonFilename;
     SteppingActionMessenger* fSteppingMessenger;
 };
 

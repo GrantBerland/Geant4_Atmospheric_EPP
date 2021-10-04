@@ -12,6 +12,7 @@ class SteppingAction;
 class G4UIdirectory;
 class G4UIcmdWithADouble;
 class G4UIcmdWithAnInteger;
+class G4UIcmdWithAString;
 
 class SteppingActionMessenger : public G4UImessenger
 {
@@ -26,6 +27,7 @@ private:
   SteppingAction* 	     fSteppingAction;
   G4UIdirectory*             fSteppingActionDir;
   G4UIcmdWithAnInteger*      fcmd;
+  G4UIcmdWithAString*        fcmd2;
 
 };
 
