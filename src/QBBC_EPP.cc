@@ -63,6 +63,9 @@
 #include "G4IonPhysics.hh"
 #include "G4NeutronTrackingCut.hh"
 
+#include "G4IonElasticPhysics.hh"
+#include "G4IonPhysicsXS.hh"
+
 QBBC_EPP::QBBC_EPP( G4int ver, const G4String&)
 {
   G4cout << "<<< Reference Physics List QBBC_EPP "
@@ -72,37 +75,58 @@ QBBC_EPP::QBBC_EPP( G4int ver, const G4String&)
   defaultCutValue = 50.*mm;  
   SetVerboseLevel(ver);
 
+/*
   // EM Physics
   //RegisterPhysics( new G4EmStandardPhysics(ver) );
-  
   // Low energy EM Physics
   RegisterPhysics( new G4EmLowEPPhysics(ver) );
-
   // Synchroton Radiation & GN Physics
   //RegisterPhysics( new G4EmExtraPhysics(ver) );
-
   // Decays
   // turn back on later? -GB
   //RegisterPhysics( new G4DecayPhysics(ver) );
-
    // Hadron Physics
-  //RegisterPhysics( new G4HadronElasticPhysicsXS(ver) );
-
+  RegisterPhysics( new G4HadronElasticPhysicsXS(ver) );
   // Stopping physics for what? (all parts.?)
-  //RegisterPhysics( new G4StoppingPhysics(ver) );
-
+  RegisterPhysics( new G4StoppingPhysics(ver) );
   // General hadronic/ionic interactions
-  //RegisterPhysics( new G4IonPhysics(ver) );
-
+  RegisterPhysics( new G4IonPhysics(ver) );
   // Proton inelastic scattering
-  //RegisterPhysics( new G4HadronInelasticQBBC(ver) );
-
+  RegisterPhysics( new G4HadronInelasticQBBC(ver) );
   // Charge exchange
-  //RegisterPhysics( new G4ChargeExchangePhysics );
-  
+  RegisterPhysics( new G4ChargeExchangePhysics );
   // Neutron tracking cut
   // probably don't need this? -GB
   //RegisterPhysics( new G4NeutronTrackingCut(ver) );
+
+*/
+
+  // EM Physics
+  RegisterPhysics( new G4EmStandardPhysics(ver) );
+
+  // Synchroton Radiation & GN Physics
+  RegisterPhysics( new G4EmExtraPhysics(ver) );
+
+  // Decays
+  RegisterPhysics( new G4DecayPhysics(ver) );
+
+   // Hadron Physics
+  RegisterPhysics( new G4HadronElasticPhysicsXS(ver) );
+
+  RegisterPhysics( new G4StoppingPhysics(ver) );
+
+  RegisterPhysics( new G4IonPhysicsXS(ver) );
+
+  RegisterPhysics( new G4IonElasticPhysics(ver) );
+
+  RegisterPhysics( new G4HadronInelasticQBBC(ver));
+
+  // Neutron tracking cut
+  RegisterPhysics( new G4NeutronTrackingCut(ver) );
+
+  // Charge exchange
+  RegisterPhysics( new G4ChargeExchangePhysics );
+  
 }		 
 
 QBBC_EPP::~QBBC_EPP() 

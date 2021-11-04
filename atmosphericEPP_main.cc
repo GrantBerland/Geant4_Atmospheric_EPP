@@ -41,7 +41,7 @@
 
 // Physics lists
 #include "G4UImanager.hh"
-#include "FTFP_BERT.hh"
+#include "QBBC_EPP.hh"
 #include "G4EmLivermorePhysics.hh"
 #include "G4PhysListFactory.hh"
 #include "G4StepLimiterPhysics.hh"
@@ -101,9 +101,10 @@ int main(int argc,char** argv)
 
 
   // Physics list
-  G4PhysListFactory factory;
-  G4VModularPhysicsList* physicsList = factory.GetReferencePhysList("QBBC");
-  
+  //G4PhysListFactory factory;
+  //G4VModularPhysicsList* physicsList = factory.GetReferencePhysList("QBBC");
+  G4VModularPhysicsList* physicsList = new QBBC_EPP();
+
   //G4VModularPhysicsList* physicsList = new FTFP_BERT;
   physicsList->RegisterPhysics(new G4StepLimiterPhysics());
 
