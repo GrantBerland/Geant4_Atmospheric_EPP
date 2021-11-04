@@ -62,7 +62,7 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
   
   fPrimaryMessenger = new PrimaryGeneratorMessenger(this);
   
-  G4ParticleDefinition* electronParticle = G4ParticleTable::GetParticleTable()->FindParticle("e-");
+  G4ParticleDefinition* electronParticle = G4ParticleTable::GetParticleTable()->FindParticle("proton");
 
   // Selects electron for particle type
   fParticleGun->SetParticleDefinition(electronParticle);
