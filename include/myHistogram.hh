@@ -17,6 +17,7 @@ class myHistogram
 public:
 
   myHistogram();
+  myHistogram(double, double, int);
   
   ~myHistogram();
 
@@ -26,13 +27,21 @@ public:
   
   // Method to fill histogram with data
   void AddCountToBin(unsigned int, double);
-  
+
+
+  void AddCountTo2DHistogram(unsigned int, double);
+
   // Writes vector to file name provided
   void WriteHistogramToFile(std::string);
 
   // Writes arbitrary data line directly to a filename specified
   void WriteDirectlyToFile(std::string, double*, size_t);
 
+
+  void Write2DHistogram(std::string);
+  
+  // Always base 10
+  void GenerateLogspaceBins(double, double, int, double[]);
 
 private:
   // Need to run InitializeHistogram() method to write particle energy 
@@ -41,12 +50,26 @@ private:
   
   // Array initialized to zeros (with fixed resolution)
   double histogramArray[1000] = {};
+
+  double binEdges[101] = {};
+
+  double twoDhistogramArray[1000][100] = {};
 };
 
 // Inline constructor and destructor methods
 inline myHistogram::myHistogram()
   : histogramArray()
 {}
+
+inline myHistogram::myHistogram(double binStart, double binStop, int nBins) 
+  : binEdges(),
+    twoDhistogramArray()
+{
+
+  GenerateLogspaceBins(binStart, binStop, nBins, binEdges);
+
+}
+
 
 inline myHistogram::~myHistogram()
 {}
@@ -59,8 +82,8 @@ inline void myHistogram::AddCountToBin(unsigned int binAddress,
 
 inline void myHistogram::WriteHistogramToFile(std::string filename)
 {
-  if(initializedFlag == 1)
-  {
+  //if(initializedFlag == 1)
+  //{
     std::ofstream outputFile;
   
     // OPEN
@@ -73,12 +96,14 @@ inline void myHistogram::WriteHistogramToFile(std::string filename)
   
     // CLOSE
     outputFile.close();
-    }
+    //}
   
+  /*
   else if(initializedFlag == 0)
   {
     std::cout << "Histogram not initialized" << std::endl;
   }
+  */
 }
   
 inline void myHistogram::WriteDirectlyToFile(std::string filename, 
@@ -101,6 +126,67 @@ inline void myHistogram::WriteDirectlyToFile(std::string filename,
 
   // CLOSE
   outputFile.close();
+}
+
+
+
+inline void myHistogram::AddCountTo2DHistogram(unsigned int address1, double value)
+{
+
+  if (value > 0.)
+  {
+    for(unsigned int i=0; i<101; i++)
+    {   
+      if(binEdges[i] > value)
+      { 
+	twoDhistogramArray[address1][i-1] += 1;
+	break; 
+      }
+    }
+
+   }
+
+}
+
+inline void myHistogram::Write2DHistogram(std::string filename)
+{
+    std::ofstream outputFile;
+  
+    // OPEN
+    outputFile.open(filename, std::ios_base::app);
+
+    for(unsigned int i=0; i<1000; i++)
+    {
+	for (unsigned int j=0; j<100-1; j++)
+	{
+	    outputFile << twoDhistogramArray[i][j] << ",";
+	}
+	outputFile << twoDhistogramArray[i][100-1] << "\n";
+    }
+  
+    // CLOSE
+    outputFile.close();
+ 
+}
+
+inline void myHistogram::GenerateLogspaceBins(G4double start, 
+					      G4double end, 
+					      G4int nBins, 
+					      G4double binArray[])
+{
+
+  // step size 
+  double c = (end - start) / (nBins - 1);
+  
+  // fill vector 
+  for (int i = 0; i < nBins-1; ++i)
+  {
+    binArray[i] = std::pow(10., start + i * c);
+  }
+
+  // fix last entry to 10^b 
+  binArray[nBins-1] = std::pow(10., end);
+
 }
 
 #endif

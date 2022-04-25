@@ -63,7 +63,7 @@ SteppingAction::SteppingAction(EventAction* eventAction, RunAction* RuAct)
     
     case(0):
       G4cout << "Energy deposition being recorded...";
-      fRunAction->fEnergyHist1->InitializeHistogram();
+      fRunAction->fEnergyHist_1->InitializeHistogram();
       G4cout << "Histogram initialized!" << G4endl;
       break;
     
@@ -81,10 +81,10 @@ SteppingAction::SteppingAction(EventAction* eventAction, RunAction* RuAct)
    
     case(4):
       G4cout << "Radiation and Ionization being recorded..." << G4endl;
-      fRunAction->fEnergyHist1->InitializeHistogram();
-      fRunAction->fEnergyHist2->InitializeHistogram();
-      fRunAction->fEnergyHist3->InitializeHistogram();
-      fRunAction->fEnergyHist4->InitializeHistogram();
+      fRunAction->fEnergyHist_1->InitializeHistogram();
+      fRunAction->fEnergyHist2D_1->InitializeHistogram();
+      fRunAction->fEnergyHist_2->InitializeHistogram();
+      fRunAction->fEnergyHist2D_2->InitializeHistogram();
       break;
 
     default:
@@ -178,7 +178,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 				  partEnergy/keV};
         // Writes 3D position vector to results file
 	// owned by RunAction
-        fRunAction->fEnergyHist1->WriteDirectlyToFile("part_traj.txt", 
+        fRunAction->fEnergyHist_1->WriteDirectlyToFile("part_traj.txt", 
 			                             pos_array,
 				sizeof(pos_array)/sizeof(*pos_array));
       
@@ -195,7 +195,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 				  partEnergy/keV};
         // Writes 3D position vector to results file
 	// owned by RunAction
-        fRunAction->fEnergyHist1->WriteDirectlyToFile(fPhotonFilename, 
+        fRunAction->fEnergyHist_1->WriteDirectlyToFile(fPhotonFilename, 
 			                             pos_array,
 				sizeof(pos_array)/sizeof(*pos_array));
       
@@ -271,12 +271,10 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
       // Electron analysis
       if(track->GetDynamicParticle()->GetDefinition()->GetParticleName() == "e-")
       {
-    	// Gets energy delta of particle over step length
-    	const G4double energyBefore = step->GetPreStepPoint()->GetKineticEnergy(); 
-   	
-    	const G4double energyAfter = step->GetPostStepPoint()->GetKineticEnergy();
-
-	const G4double energyDep = energyAfter - energyBefore;
+    	  // Gets energy delta of particle over step length
+    	  G4double energyBefore = step->GetPreStepPoint()->GetKineticEnergy(); 
+    	  G4double energyAfter = step->GetPostStepPoint()->GetKineticEnergy();
+	  G4double energyDep = energyBefore - energyAfter;
 
 	  // Gets altitude of particle
       	  G4ThreeVector position = track->GetPosition();
@@ -287,12 +285,10 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
       	  G4int altitudeAddress = std::floor(500. + zPos/km);
       
 	  // Check for valid altitude address
-	  if(altitudeAddress > 0 && altitudeAddress < 1000) 
+	  if(altitudeAddress > 0 && altitudeAddress < 1000 && energyDep > 0. && energyAfter > 0.) 
 	  {
-	    LogEnergyToSpecificHistogram(altitudeAddress, energyDep, 1);
-	    LogEnergyToSpecificHistogram(altitudeAddress, energyAfter, 2);
+	    LogEnergyToSpecificHistogram(altitudeAddress, energyDep, energyAfter, 1);
 	  }
-
 
 	}
 
@@ -301,12 +297,9 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
       {
 	
     	// Gets energy delta of particle over step length
-    	const G4double energyBefore = step->GetPreStepPoint()->GetKineticEnergy(); 
-   	
-    	const G4double energyAfter = step->GetPostStepPoint()->GetKineticEnergy();
-
-	const G4double energyDep = energyAfter - energyBefore;
-
+    	G4double energyBefore = step->GetPreStepPoint()->GetKineticEnergy(); 
+    	G4double energyAfter = step->GetPostStepPoint()->GetKineticEnergy();
+	G4double energyDep = energyBefore - energyAfter;
 	   
 	// Gets altitude of particle
       	G4ThreeVector position = track->GetPosition();
@@ -317,10 +310,9 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
  	G4int altitudeAddress = std::floor(500. + zPos/km);
 	  
 	// Check for valid altitude address
-	if(altitudeAddress > 0 && altitudeAddress < 1000) 
+	if(altitudeAddress > 0 && altitudeAddress < 1000 && energyDep > 0. && energyAfter > 0.) 
 	{
-	  LogEnergyToSpecificHistogram(altitudeAddress, energyDep, 3);
-	  LogEnergyToSpecificHistogram(altitudeAddress, energyAfter, 4);
+	  LogEnergyToSpecificHistogram(altitudeAddress, energyDep, energyAfter, 2);
 	}
 
       }
@@ -341,11 +333,11 @@ void SteppingAction::LogEnergy(G4int histogramAddress, G4double energy)
 
   G4AutoLock lock(&aMutex);
 
-  fRunAction->fEnergyHist1->AddCountToBin(histogramAddress, energy/keV);
+  fRunAction->fEnergyHist_1->AddCountToBin(histogramAddress, energy/keV);
 
 }
 
-void SteppingAction::LogEnergyToSpecificHistogram(G4int histogramAddress, G4double energy, G4int whichHistogram)
+void SteppingAction::LogEnergyToSpecificHistogram(G4int histogramAddress, G4double entry1, G4double entry2, G4int whichHistogram)
 {
 
   G4AutoLock lock(&aMutex);
@@ -353,16 +345,15 @@ void SteppingAction::LogEnergyToSpecificHistogram(G4int histogramAddress, G4doub
   switch(whichHistogram)
   {
     case(1):
-      fRunAction->fEnergyHist1->AddCountToBin(histogramAddress, energy/keV);
+      fRunAction->fEnergyHist_1->AddCountToBin(histogramAddress, entry1/keV);
+      fRunAction->fEnergyHist2D_1->AddCountTo2DHistogram(histogramAddress, entry2/keV);
       break;
     case(2):
-      fRunAction->fEnergyHist2->AddCountToBin(histogramAddress, energy/keV);
+      fRunAction->fEnergyHist_2->AddCountToBin(histogramAddress, entry1/keV);
+      fRunAction->fEnergyHist2D_2->AddCountTo2DHistogram(histogramAddress, entry2/keV);
       break;
-    case(3):
-      fRunAction->fEnergyHist3->AddCountToBin(histogramAddress, energy/keV);
-      break;
-    case(4):
-      fRunAction->fEnergyHist4->AddCountToBin(histogramAddress, energy/keV);
+    default:
+      throw std::runtime_error("Enter a valid histogram selection!");
       break;
   }
 

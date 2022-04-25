@@ -20,7 +20,7 @@
 #/cuts/setMaxCutEnergy 50 eV
 
 # Set file name for atmosphere table
-/dataCollection/setAtmosFileName Jupiter_atmosphere.csv
+/dataCollection/setAtmosFileName MSISE00_atmosphere.csv 
 
 /run/initialize
 
@@ -34,7 +34,8 @@
 # 1 - particle trajectory (x, y, z, E) (warning, lots of data!!!)
 # 2 - tracks spectra and 2D position info of backscattered photons and particles
 # 3 - electron histogram and photon trajectory
-/dataCollection/setDataCollection 3 
+# 4 - energy and energy deposition histogram with altitude 
+/dataCollection/setDataCollection 4
 
 # 10 - RungeKutta w/ PrinceDormand method, 7-8
 /field/setStepperType 10
@@ -45,12 +46,12 @@
 /energy/setSourceType 0
 
 # Set file name for histogram or results file
-/dataCollection/setHistFileName test2_jupiter.txt
+/dataCollection/setHistFileName test.csv
 
-/dataCollection/setPhotonFileName photon_traj_Jupiter2.csv
+/dataCollection/setPhotonFileName test_photons.csv
 
 # 0 = sin(x) distribution
-# 1 = sin(2x) distribution
+# 1 = sin^2(x) distribution
 # 2 = isotropic PAD
 # 3 = all particles have pitch angle = maximum pitch angle, set above
 # 4 = particle pitch angles are read in from pitchAngleFile.csv in [deg]
@@ -62,16 +63,13 @@
 
 /energy/particleStartingAltitude 500.  # [km A1B]
 
-
-/dataCollection/SetPhotonWindow 250.   # [km A1B]
-
 # 0 = exponential 
 # 1 = monoenergetic
 # 2 = energies are read in from energyFile.csv in [keV]
-/energy/setEnergyDistributionType 2 
+/energy/setEnergyDistributionType 0 
 
 # Either exponential folding energy or monoenergetic energy
-/energy/setFoldingEnergy 500. # [keV]
+/energy/setFoldingEnergy 1000 # [keV]
 
 # Number of particles to run 
-/run/beamOn 2
+/run/beamOn 1000

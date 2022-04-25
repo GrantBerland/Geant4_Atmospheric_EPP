@@ -124,7 +124,7 @@ int main(int argc,char** argv)
               //   with warning.
               // Looping particles with E > ^ keV will generate a warning.
   runAction->SetImportantEnergy( 0.1 * keV );
-  runAction->SetNumberOfTrials( 30 );
+  runAction->SetNumberOfTrials( 50 );
               // Looping particles with E > 0.1 MeV will survive for up to
               //  30 'tracking' steps, and only be killed if they still loop.
   // Note: this mechanism overwrites the thresholds established by

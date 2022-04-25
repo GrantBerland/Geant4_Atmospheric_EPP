@@ -60,7 +60,7 @@ class SteppingAction : public G4UserSteppingAction
 
     void LogEnergy(G4int, G4double);    
     
-    void LogEnergyToSpecificHistogram(G4int, G4double, G4int);
+    void LogEnergyToSpecificHistogram(G4int, G4double, G4double, G4int);
 
     // method from the base class
     virtual void UserSteppingAction(const G4Step*);
