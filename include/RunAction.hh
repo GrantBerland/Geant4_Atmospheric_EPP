@@ -86,7 +86,10 @@ class RunAction : public G4UserRunAction
     G4double GetImportantEnergy() { return fImportantEnergy; } 
 
   public:
-    myHistogram*           fEnergyHist;
+    myHistogram*           fEnergyHist1;
+    myHistogram*           fEnergyHist2;
+    myHistogram*           fEnergyHist3;
+    myHistogram*           fEnergyHist4;
   
   private:
     RunActionMessenger*    fRunActionMessenger;

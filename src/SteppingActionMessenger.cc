@@ -25,6 +25,9 @@ SteppingActionMessenger::SteppingActionMessenger(SteppingAction* step)
   fcmd2->SetParameterName("Enter file name.", true);
   fcmd2->SetDefaultValue("photon_traj.csv");
 
+  fDcmd = new G4UIcmdWithADouble("/dataCollection/setPhotonWindowAltitude",this);
+  fDcmd->SetParameterName("Enter altitude in km", true);
+  fDcmd->SetDefaultValue(500.);
 }
 
 SteppingActionMessenger::~SteppingActionMessenger()
@@ -42,5 +45,9 @@ void SteppingActionMessenger::SetNewValue(G4UIcommand* command,
 
   if(command == fcmd2){
     fSteppingAction->SetPhotonFilename(newValue);
+  }
+
+  if(command == fDcmd){
+    fSteppingAction->SetPhotonWindowAlt(std::stod(newValue));
   }
 }

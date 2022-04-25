@@ -61,14 +61,22 @@ RunAction::RunAction()
   fNumberOfTrials  =   15;  // Arbitrary
 
   fRunActionMessenger     = new RunActionMessenger(this); 
-  fEnergyHist             = new myHistogram();
+
+  fEnergyHist1             = new myHistogram();
+  fEnergyHist2             = new myHistogram();
+  fEnergyHist3             = new myHistogram();
+  fEnergyHist4             = new myHistogram();
+
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 RunAction::~RunAction()
 {
-  delete fEnergyHist;
+  delete fEnergyHist1;
+  delete fEnergyHist2;
+  delete fEnergyHist3;
+  delete fEnergyHist4;
   delete fRunActionMessenger;
 }
 
@@ -76,9 +84,7 @@ RunAction::~RunAction()
 
 void RunAction::BeginOfRunAction(const G4Run*)
 {
-
   ChangeLooperParameters( G4Electron::Definition() );
-
 }
 
 void RunAction::ChangeLooperParameters(const G4ParticleDefinition* particleDef )
@@ -116,9 +122,6 @@ void RunAction::ChangeLooperParameters(const G4ParticleDefinition* particleDef )
 void RunAction::EndOfRunAction(const G4Run*)
 {
   
-  G4cout << "Writing results to histogram...";
-  fEnergyHist->WriteHistogramToFile(fHistogramFileName);
-  G4cout << "complete!" << G4endl;
 }
 
 

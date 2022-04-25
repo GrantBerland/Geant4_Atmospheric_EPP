@@ -50,9 +50,10 @@ SteppingAction::SteppingAction(EventAction* eventAction, RunAction* RuAct)
   fEventAction(eventAction),
   fRunAction(RuAct),
   fEnergyThreshold_keV(0.),
+  fWindowAlt(500.),
   fDataCollectionType(0),
-  fSteppingMessenger(),
-  fPhotonFilename()
+  fPhotonFilename(),
+  fSteppingMessenger()
 {
 
   fSteppingMessenger = new SteppingActionMessenger(this);
@@ -62,7 +63,7 @@ SteppingAction::SteppingAction(EventAction* eventAction, RunAction* RuAct)
     
     case(0):
       G4cout << "Energy deposition being recorded...";
-      fRunAction->fEnergyHist->InitializeHistogram();
+      fRunAction->fEnergyHist1->InitializeHistogram();
       G4cout << "Histogram initialized!" << G4endl;
       break;
     
@@ -75,9 +76,17 @@ SteppingAction::SteppingAction(EventAction* eventAction, RunAction* RuAct)
       break;
 
     case(3):
-      G4cout << "Photon data begin recorded..." << G4endl;
+      G4cout << "Photon data being recorded..." << G4endl;
       break;
-    
+   
+    case(4):
+      G4cout << "Radiation and Ionization being recorded..." << G4endl;
+      fRunAction->fEnergyHist1->InitializeHistogram();
+      fRunAction->fEnergyHist2->InitializeHistogram();
+      fRunAction->fEnergyHist3->InitializeHistogram();
+      fRunAction->fEnergyHist4->InitializeHistogram();
+      break;
+
     default:
       throw std::invalid_argument("No data being recorded, exiting...");
       break;
@@ -90,13 +99,40 @@ SteppingAction::~SteppingAction()
   delete fSteppingMessenger;
 }
 
-//namespace{G4Mutex aMutex=G4MUTEX_INITIALIZER;}
 
 void SteppingAction::UserSteppingAction(const G4Step* step)
 {
 
   G4Track* track = step->GetTrack();
+ 
+
+  // This error occurred more often in the Jupiter version
+  if( std::isnan(step->GetPostStepPoint()->GetKineticEnergy()) )
+  {
+    G4cout << "Particle killed at: " << step->GetPreStepPoint()->GetKineticEnergy()/keV << 
+            " keV , Process: " << step->GetPostStepPoint()->GetProcessDefinedStep()->GetProcessName() << G4endl;
+    
+    // kill it
+    track->SetTrackStatus(fStopAndKill);
+    //fRunAction->IncrementKilledParticleCount();
+
+    G4cout << "Particle killed! (negative energy)" << G4endl;
   
+  }
+
+  G4double time = track->GetProperTime();
+  
+  if(time/second > 1)
+  {
+    
+    track->SetTrackStatus(fStopAndKill);
+    //fRunAction->IncrementKilledParticleCount();
+
+    G4cout << "Particle killed! (time)" << G4endl;
+  }
+
+
+
   switch(fDataCollectionType)
   {
     
@@ -142,7 +178,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 				  partEnergy/keV};
         // Writes 3D position vector to results file
 	// owned by RunAction
-        fRunAction->fEnergyHist->WriteDirectlyToFile("part_traj.txt", 
+        fRunAction->fEnergyHist1->WriteDirectlyToFile("part_traj.txt", 
 			                             pos_array,
 				sizeof(pos_array)/sizeof(*pos_array));
       
@@ -159,7 +195,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 				  partEnergy/keV};
         // Writes 3D position vector to results file
 	// owned by RunAction
-        fRunAction->fEnergyHist->WriteDirectlyToFile(fPhotonFilename, 
+        fRunAction->fEnergyHist1->WriteDirectlyToFile(fPhotonFilename, 
 			                             pos_array,
 				sizeof(pos_array)/sizeof(*pos_array));
       
@@ -228,6 +264,70 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
       break;
     }
 
+
+    case(4): // Radiation and ionization histograms 
+    {
+
+      // Electron analysis
+      if(track->GetDynamicParticle()->GetDefinition()->GetParticleName() == "e-")
+      {
+    	// Gets energy delta of particle over step length
+    	const G4double energyBefore = step->GetPreStepPoint()->GetKineticEnergy(); 
+   	
+    	const G4double energyAfter = step->GetPostStepPoint()->GetKineticEnergy();
+
+	const G4double energyDep = energyAfter - energyBefore;
+
+	  // Gets altitude of particle
+      	  G4ThreeVector position = track->GetPosition();
+      	  G4double      zPos     = position.z();
+      
+          // Adds energy deposition to vector owned by RunAction, which is
+          // written to a results file per simulation run
+      	  G4int altitudeAddress = std::floor(500. + zPos/km);
+      
+	  // Check for valid altitude address
+	  if(altitudeAddress > 0 && altitudeAddress < 1000) 
+	  {
+	    LogEnergyToSpecificHistogram(altitudeAddress, energyDep, 1);
+	    LogEnergyToSpecificHistogram(altitudeAddress, energyAfter, 2);
+	  }
+
+
+	}
+
+      // Check if particle is a photon 
+      else if(track->GetDynamicParticle()->GetDefinition()->GetParticleName() == "gamma")
+      {
+	
+    	// Gets energy delta of particle over step length
+    	const G4double energyBefore = step->GetPreStepPoint()->GetKineticEnergy(); 
+   	
+    	const G4double energyAfter = step->GetPostStepPoint()->GetKineticEnergy();
+
+	const G4double energyDep = energyAfter - energyBefore;
+
+	   
+	// Gets altitude of particle
+      	G4ThreeVector position = track->GetPosition();
+      	G4double      zPos     = position.z();
+      
+        // Adds energy deposition to vector owned by RunAction, which is
+        // written to a results file per simulation run
+ 	G4int altitudeAddress = std::floor(500. + zPos/km);
+	  
+	// Check for valid altitude address
+	if(altitudeAddress > 0 && altitudeAddress < 1000) 
+	{
+	  LogEnergyToSpecificHistogram(altitudeAddress, energyDep, 3);
+	  LogEnergyToSpecificHistogram(altitudeAddress, energyAfter, 4);
+	}
+
+      }
+
+      break;
+    }
+
     default: 
       throw std::runtime_error("Enter a valid data collection type!");
       break;
@@ -239,10 +339,32 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 void SteppingAction::LogEnergy(G4int histogramAddress, G4double energy)
 {
 
-  //G4AutoLock lock(&aMutex);
+  G4AutoLock lock(&aMutex);
 
-  fRunAction->fEnergyHist->AddCountToBin(histogramAddress, energy/keV);
+  fRunAction->fEnergyHist1->AddCountToBin(histogramAddress, energy/keV);
 
 }
 
+void SteppingAction::LogEnergyToSpecificHistogram(G4int histogramAddress, G4double energy, G4int whichHistogram)
+{
+
+  G4AutoLock lock(&aMutex);
+
+  switch(whichHistogram)
+  {
+    case(1):
+      fRunAction->fEnergyHist1->AddCountToBin(histogramAddress, energy/keV);
+      break;
+    case(2):
+      fRunAction->fEnergyHist2->AddCountToBin(histogramAddress, energy/keV);
+      break;
+    case(3):
+      fRunAction->fEnergyHist3->AddCountToBin(histogramAddress, energy/keV);
+      break;
+    case(4):
+      fRunAction->fEnergyHist4->AddCountToBin(histogramAddress, energy/keV);
+      break;
+  }
+
+}
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
