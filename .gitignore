@@ -3,8 +3,10 @@
 .project
 *.macro
 **/data
+**/spectral_data
 *.o
 *.settings
 *.cc.o
 /build/*
 /results
+*.ipynb_checkpoints
