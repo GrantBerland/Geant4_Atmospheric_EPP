@@ -159,10 +159,24 @@ void PrimaryGeneratorAction::GenerateElectrons(ParticleSample* r)
       throw std::invalid_argument("Select a pitch angle distribution");
   }
 
+
+  // NB: need to rotate into inclined B-field frame
+  // Poker Flats: 65.77 geomagnetic latitude --> 77.318 deg magnetic tilt angle
+  // => we want to tilt our coordinate system 12.682 deg in the z-y plane
+  G4double tilt_angle = 12.682 * fPI / 180.; // rad
+
+
   // Initial momentum direction of particles
   r->xDir = std::sin(pitchAngle)*std::cos(gyroPhase);
   r->yDir = std::sin(pitchAngle)*std::sin(gyroPhase);
   r->zDir = -std::cos(pitchAngle);
+
+
+  //r->xDir = r->xDir;
+  r->yDir = std::cos(tilt_angle) * r->yDir - std::sin(tilt_angle) * r->zDir;
+  r->zDir = std::sin(tilt_angle) * r->yDir + std::cos(tilt_angle) * r->zDir;
+
+
 
   // Energy distribution types
   // 0 - exponential with folding energy fE0

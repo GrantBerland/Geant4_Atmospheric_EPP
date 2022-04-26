@@ -133,18 +133,14 @@ inline void myHistogram::WriteDirectlyToFile(std::string filename,
 inline void myHistogram::AddCountTo2DHistogram(unsigned int address1, double value)
 {
 
-  if (value > 0.)
-  {
-    for(unsigned int i=0; i<101; i++)
-    {   
-      if(binEdges[i] > value)
-      { 
-	twoDhistogramArray[address1][i-1] += 1;
-	break; 
-      }
+  for(unsigned int i=0; i<101; i++)
+  {   
+    if(binEdges[i] > value)
+    { 
+      twoDhistogramArray[address1][i] += 1;
+      break; 
     }
-
-   }
+  }
 
 }
 
