@@ -285,7 +285,9 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
       	  G4int altitudeAddress = std::floor(500. + zPos/km);
       
 	  // Check for valid altitude address
-	  if(altitudeAddress > 0 && altitudeAddress < 1000 && energyDep > 0. && energyAfter > 0.) 
+	  if(altitudeAddress > 0 && altitudeAddress < 1000 && energyDep > 0. && energyAfter > 0. 
+			  && !std::isnan(energyDep) && !std::isnan(energyAfter)) 
+		  // check if energies are nan 
 	  {
 	    LogEnergyToSpecificHistogram(altitudeAddress, energyDep, energyAfter, 1);
 	  }
@@ -310,7 +312,8 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
  	G4int altitudeAddress = std::floor(500. + zPos/km);
 	  
 	// Check for valid altitude address
-	if(altitudeAddress > 0 && altitudeAddress < 1000 && energyDep > 0. && energyAfter > 0.) 
+	if(altitudeAddress > 0 && altitudeAddress < 1000 && energyDep > 0. && energyAfter > 0. 
+			&& !std::isnan(energyDep) && !std::isnan(energyAfter)) 
 	{
 	  LogEnergyToSpecificHistogram(altitudeAddress, energyDep, energyAfter, 2);
 	}
