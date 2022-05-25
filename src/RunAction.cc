@@ -56,18 +56,18 @@ RunAction::RunAction()
   fHistogramFileName()
 {
 
-  fWarningEnergy   =   0.1 * keV;  // Arbitrary 
-  fImportantEnergy =   1.0 * keV;  // Arbitrary 
-  fNumberOfTrials  =   30;  // Arbitrary
+  fWarningEnergy   =   0.01 * keV;  // Arbitrary 
+  fImportantEnergy =   0.1 * keV;  // Arbitrary 
+  fNumberOfTrials  =   300;  // Arbitrary
 
   fRunActionMessenger     = new RunActionMessenger(this); 
 
   fEnergyHist_1               = new myHistogram(); // 1000 km in 1 km bins
-  fEnergyHist2D_1             = new myHistogram(std::log10(0.250), std::log10(1000), 101); 
-  							// [250 eV, 1 MeV] in 100 bins
+  fEnergyHist2D_1             = new myHistogram(std::log10(0.250), std::log10(10000), 101); 
+  							// [250 eV, 10 MeV] in 100 bins
   fEnergyHist_2               = new myHistogram(); // 1000 km in 1 km bins
-  fEnergyHist2D_2             = new myHistogram(std::log10(0.250), std::log10(1000), 101); 
-  							// [250 eV, 1 MeV] in 100 bins
+  fEnergyHist2D_2             = new myHistogram(std::log10(0.250), std::log10(10000), 101); 
+  							// [250 eV, 10 MeV] in 100 bins
 
 }
 
