@@ -277,17 +277,14 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 	  G4double energyDep = energyBefore - energyAfter;
 
 	  // Gets altitude of particle
-      	  G4ThreeVector position = track->GetPosition();
-      	  G4double      zPos     = position.z();
+      	  G4double zPos = track->GetPosition().z();
       
           // Adds energy deposition to vector owned by RunAction, which is
           // written to a results file per simulation run
       	  G4int altitudeAddress = std::floor(500. + zPos/km);
       
 	  // Check for valid altitude address
-	  if(altitudeAddress > 0 && altitudeAddress < 1000 && energyDep > 0. && energyAfter > 0. 
-			  && !std::isnan(energyDep) && !std::isnan(energyAfter)) 
-		  // check if energies are nan 
+	  if(altitudeAddress > 0 && altitudeAddress < 1000) 
 	  {
 	    LogEnergyToSpecificHistogram(altitudeAddress, energyDep, energyAfter, 1);
 	  }
@@ -304,16 +301,14 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 	G4double energyDep = energyBefore - energyAfter;
 	   
 	// Gets altitude of particle
-      	G4ThreeVector position = track->GetPosition();
-      	G4double      zPos     = position.z();
+      	G4double zPos = track->GetPosition().z();
       
         // Adds energy deposition to vector owned by RunAction, which is
         // written to a results file per simulation run
  	G4int altitudeAddress = std::floor(500. + zPos/km);
 	  
 	// Check for valid altitude address
-	if(altitudeAddress > 0 && altitudeAddress < 1000 && energyDep > 0. && energyAfter > 0. 
-			&& !std::isnan(energyDep) && !std::isnan(energyAfter)) 
+	if(altitudeAddress > 0 && altitudeAddress < 1000) 
 	{
 	  LogEnergyToSpecificHistogram(altitudeAddress, energyDep, energyAfter, 2);
 	}

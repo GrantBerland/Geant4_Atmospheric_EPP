@@ -56,8 +56,8 @@ RunAction::RunAction()
   fHistogramFileName()
 {
 
-  fWarningEnergy   =   0.01 * keV;  // Arbitrary 
-  fImportantEnergy =   0.1 * keV;  // Arbitrary 
+  fWarningEnergy   =   0.0 * keV;  // Arbitrary 
+  fImportantEnergy =   0.0 * keV;  // Arbitrary 
   fNumberOfTrials  =   300;  // Arbitrary
 
   fRunActionMessenger     = new RunActionMessenger(this); 

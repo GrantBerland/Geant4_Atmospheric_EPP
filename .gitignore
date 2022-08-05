@@ -10,3 +10,4 @@
 /build/*
 /results
 *.ipynb_checkpoints
+/analysis/G4data/*
