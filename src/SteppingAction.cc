@@ -268,38 +268,26 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
     case(4): // Radiation and ionization histograms 
     {
 
-      // Electron analysis
-      if(track->GetDynamicParticle()->GetDefinition()->GetParticleName() == "e-")
+      G4int flag = 0;
+      G4String particleName = track->GetDynamicParticle()->GetDefinition()->GetParticleName();
+      if( std::strcmp(particleName, "e-") == 0)
+      {      
+	flag = 1;
+      }
+      else if( std::strcmp(particleName, "gamma") == 0)
       {
-    	  // Gets energy delta of particle over step length
-    	  G4double energyBefore = step->GetPreStepPoint()->GetKineticEnergy(); 
-    	  G4double energyAfter = step->GetPostStepPoint()->GetKineticEnergy();
-	  G4double energyDep = energyBefore - energyAfter;
+	flag = 2;
+      }
 
-	  // Gets altitude of particle
-      	  G4double zPos = track->GetPosition().z();
-      
-          // Adds energy deposition to vector owned by RunAction, which is
-          // written to a results file per simulation run
-      	  G4int altitudeAddress = std::floor(500. + zPos/km);
-      
-	  // Check for valid altitude address
-	  if(altitudeAddress > 0 && altitudeAddress < 1000) 
-	  {
-	    LogEnergyToSpecificHistogram(altitudeAddress, energyDep, energyAfter, 1);
-	  }
-
-	}
-
-      // Check if particle is a photon 
-      else if(track->GetDynamicParticle()->GetDefinition()->GetParticleName() == "gamma")
+      if(flag > 0)
       {
-	
     	// Gets energy delta of particle over step length
-    	G4double energyBefore = step->GetPreStepPoint()->GetKineticEnergy(); 
+    	//G4double energyBefore = step->GetPreStepPoint()->GetKineticEnergy(); 
     	G4double energyAfter = step->GetPostStepPoint()->GetKineticEnergy();
-	G4double energyDep = energyBefore - energyAfter;
-	   
+	//G4double energyDep = energyBefore - energyAfter;
+	     
+	G4double energyDep = step->GetTotalEnergyDeposit();
+	
 	// Gets altitude of particle
       	G4double zPos = track->GetPosition().z();
       
@@ -310,7 +298,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 	// Check for valid altitude address
 	if(altitudeAddress > 0 && altitudeAddress < 1000) 
 	{
-	  LogEnergyToSpecificHistogram(altitudeAddress, energyDep, energyAfter, 2);
+	  LogEnergyToSpecificHistogram(altitudeAddress, energyDep, energyAfter, flag);
 	}
 
       }
