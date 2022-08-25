@@ -87,7 +87,8 @@ void PrimaryGeneratorAction::GenerateElectrons(ParticleSample* r)
   // Initial position RV's
   G4double theta = G4UniformRand() * 2. * 3.1415926; // u ~ Unif[0, 2 pi)
   G4double radialPosition = G4UniformRand();  // [0, 1)
-  G4double diskRadius = 400.*km;
+  //G4double diskRadius = 400.*km;
+  G4double diskRadius = 0.01*km;
 
   // Random uniform sampling on a circular area
   r->xPos = diskRadius * std::sqrt(radialPosition) * std::cos(theta);

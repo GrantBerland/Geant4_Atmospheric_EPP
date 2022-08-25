@@ -106,6 +106,8 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
   G4Track* track = step->GetTrack();
  
 
+
+  /*
   // This error occurred more often in the Jupiter version
   if( std::isnan(step->GetPostStepPoint()->GetKineticEnergy()) )
   {
@@ -119,6 +121,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
     G4cout << "Particle killed! (negative energy)" << G4endl;
   
   }
+ 
 
   G4double time = track->GetProperTime();
   
@@ -130,7 +133,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 
     G4cout << "Particle killed! (time)" << G4endl;
   }
-
+  */
 
 
   switch(fDataCollectionType)
@@ -282,7 +285,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
       if(flag > 0)
       {
     	// Gets energy delta of particle over step length
-    	//G4double energyBefore = step->GetPreStepPoint()->GetKineticEnergy(); 
+    	G4double energyBefore = step->GetPreStepPoint()->GetKineticEnergy(); 
     	G4double energyAfter = step->GetPostStepPoint()->GetKineticEnergy();
 	//G4double energyDep = energyBefore - energyAfter;
 	     
@@ -295,10 +298,16 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
         // written to a results file per simulation run
  	G4int altitudeAddress = std::floor(500. + zPos/km);
 	  
+	
 	// Check for valid altitude address
-	if(altitudeAddress > 0 && altitudeAddress < 1000) 
+	if(altitudeAddress > 0 && altitudeAddress < 1000 && track->GetNextVolume() != nullptr) 
 	{
-	  LogEnergyToSpecificHistogram(altitudeAddress, energyDep, energyAfter, flag);
+	  LogEnergyToSpecificHistogram(altitudeAddress, energyDep, energyBefore, flag);
+	}
+	else // escape outside simulation case
+	{
+	  LogEnergyToSpecificHistogram(999, energyAfter, energyAfter, flag);
+	  track->SetTrackStatus(fStopAndKill);
 	}
 
       }
