@@ -273,22 +273,32 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 
       G4int flag = 0;
       G4String particleName = track->GetDynamicParticle()->GetDefinition()->GetParticleName();
-      if( std::strcmp(particleName, "e-") == 0)
+      if( std::strcmp(particleName, "e-") == 0 ) // electron case
       {      
 	flag = 1;
       }
-      else if( std::strcmp(particleName, "gamma") == 0)
+      else if( std::strcmp(particleName, "gamma") == 0 ) // photon case
       {
 	flag = 2;
+      }
+      else if( std::strcmp(particleName, "e+") == 0 ) // positron case
+      {      
+	flag = 1;
+      }
+      else
+      {
+	throw std::runtime_error("New particle alert!! Particle: " + particleName);
       }
 
       if(flag > 0)
       {
     	// Gets energy delta of particle over step length
     	G4double energyBefore = step->GetPreStepPoint()->GetKineticEnergy(); 
-    	G4double energyAfter = step->GetPostStepPoint()->GetKineticEnergy();
-	//G4double energyDep = energyBefore - energyAfter;
-	     
+    	G4double energyAfter  = step->GetPostStepPoint()->GetKineticEnergy();
+	//G4double energyDep  = energyBefore - energyAfter;
+	
+	if( energyBefore < energyAfter) throw std::runtime_error("Particle gained energy!");
+
 	G4double energyDep = step->GetTotalEnergyDeposit();
 	
 	// Gets altitude of particle
@@ -300,11 +310,11 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 	  
 	
 	// Check for valid altitude address
-	if(altitudeAddress > 0 && altitudeAddress < 1000 && track->GetNextVolume() != nullptr) 
+	if(altitudeAddress >= 0 && altitudeAddress < 1000 && track->GetNextVolume() != nullptr) 
 	{
 	  LogEnergyToSpecificHistogram(altitudeAddress, energyDep, energyBefore, flag);
 	}
-	else // escape outside simulation case
+	else // escape outside simulation 
 	{
 	  LogEnergyToSpecificHistogram(999, energyAfter, energyAfter, flag);
 	  track->SetTrackStatus(fStopAndKill);

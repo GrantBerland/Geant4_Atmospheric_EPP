@@ -230,8 +230,7 @@ void F03FieldSetup::SetFieldValue(G4ThreeVector fieldVector)
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 G4FieldManager* F03FieldSetup::GetGlobalFieldManager(){
-  return G4TransportationManager::GetTransportationManager()
-                                  ->GetFieldManager();
+	return G4TransportationManager::GetTransportationManager()->GetFieldManager(); 
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

@@ -85,7 +85,7 @@ void PrimaryGeneratorAction::GenerateElectrons(ParticleSample* r)
   std::ifstream inputFile; 
 
   // Initial position RV's
-  G4double theta = G4UniformRand() * 2. * 3.1415926; // u ~ Unif[0, 2 pi)
+  G4double theta = G4UniformRand() * 2. * fPI; // u ~ Unif[0, 2 pi)
   G4double radialPosition = G4UniformRand();  // [0, 1)
   //G4double diskRadius = 400.*km;
   G4double diskRadius = 0.01*km;
@@ -99,12 +99,18 @@ void PrimaryGeneratorAction::GenerateElectrons(ParticleSample* r)
 
   // Particle attribute RV's
   // Starts electrons with gyromotion about field line
-  G4double maxPitchAngle = fMaxPitchAngle * 3.1415926 / 180.;   // rad
+  G4double maxPitchAngle = fMaxPitchAngle * fPI / 180.;   // rad
+ 
+  G4double a = std::cos(maxPitchAngle);
+  G4double b = 1.;
+
   
+
   // Angular RV's
-  G4double gyroPhase  = G4UniformRand() * 2. * 3.1415926;
-  G4double pitchAngle = (G4UniformRand()*2.-1.) * maxPitchAngle 
-	                            * 3.1415926 / 180.; 
+  G4double gyroPhase  = G4UniformRand() * 2. * fPI;
+  //G4double pitchAngle = (G4UniformRand()*2.-1.) * maxPitchAngle * fPI / 180.; 
+
+  G4double pitchAngle;
 
   // Loss cone at 1000 km : 49.4 deg
   // Loss cone at 300 km  : 61.45 deg
@@ -115,7 +121,7 @@ void PrimaryGeneratorAction::GenerateElectrons(ParticleSample* r)
     case(0): 
       // Sine distribution inverse CDF sampling
       // pitch angle ~ sine[0, maxPitchAngle]
-      pitchAngle = 4 * maxPitchAngle / fPI * std::asin(std::sqrt(G4UniformRand()/2.));
+      pitchAngle = std::acos(G4UniformRand() * (b-a) + a);
 
       break;
    
