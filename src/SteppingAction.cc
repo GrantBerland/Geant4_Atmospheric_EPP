@@ -256,35 +256,47 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
       }
       else
       {
+	// If simulating high energy physics (~ GeV electrons), nuclear interactions are likely
+	// and this line will be hit. Can change to warning or logging behavior in that case.
 	throw std::runtime_error("New particle alert!! Particle: " + particleName);
       }
 
       if(flag > 0)
       {
-    	// Gets energy delta of particle over step length
+
+        // Adds energy deposition to vector owned by RunAction, which is
+        // written to a results file per simulation run
+    	
+
+	// Gets energy delta of particle over step length
     	G4double energyBefore = step->GetPreStepPoint()->GetKineticEnergy(); 
     	G4double energyAfter  = step->GetPostStepPoint()->GetKineticEnergy();
-	//G4double energyDep  = energyBefore - energyAfter;
 	
+	//G4double energyDep  = energyBefore - energyAfter;
+
+	// This line shouldn't be hit but it's a good check either way 
 	if( energyBefore < energyAfter) throw std::runtime_error("Particle gained energy!");
 
 	G4double energyDep = step->GetTotalEnergyDeposit();
 	
 	// Gets altitude of particle
       	G4double zPos = track->GetPosition().z();
-      
-        // Adds energy deposition to vector owned by RunAction, which is
-        // written to a results file per simulation run
- 	G4int altitudeAddress = std::floor(500. + zPos/km);
+     
+	// Rounds altitude to nearest kilometer
+ 	G4int altitudeAddress = std::round(500. + zPos/km);
 	  
 	
 	// Check for valid altitude address
 	if(altitudeAddress >= 0 && altitudeAddress < 500 && track->GetNextVolume() != nullptr) 
 	{
+	  // Arguments:
+	  // altitude, energy lost, current energy before loss calculation, particle type
 	  LogEnergyToSpecificHistogram(altitudeAddress, energyDep, energyBefore, flag);
 	}
 	else // escape outside simulation 
 	{
+	  // Arguments:
+	  // altitude, current energy, current energy, particle type
 	  LogEnergyToSpecificHistogram(500, energyAfter, energyAfter, flag);
 	  track->SetTrackStatus(fStopAndKill);
 	}
@@ -319,13 +331,19 @@ void SteppingAction::LogEnergyToSpecificHistogram(G4int histogramAddress, G4doub
   switch(whichHistogram)
   {
     case(1):
+      
+      // Electron and positron case
       fRunAction->fEnergyHist_1->AddCountToBin(histogramAddress, entry1/keV);
       fRunAction->fEnergyHist2D_1->AddCountTo2DHistogram(histogramAddress, entry2/keV);
       break;
+    
     case(2):
+
+      // Photon case
       fRunAction->fEnergyHist_2->AddCountToBin(histogramAddress, entry1/keV);
       fRunAction->fEnergyHist2D_2->AddCountTo2DHistogram(histogramAddress, entry2/keV);
       break;
+    
     default:
       throw std::runtime_error("Enter a valid histogram selection!");
       break;
