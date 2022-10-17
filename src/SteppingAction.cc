@@ -285,19 +285,32 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 	// Rounds altitude to nearest kilometer
  	G4int altitudeAddress = std::round(500. + zPos/km);
 	  
+	G4ThreeVector mom = step->GetPreStepPoint()->GetMomentumDirection();
+
+
+	G4double PAratio = mom.z() / std::sqrt( mom.y() * mom.y() + mom.x() * mom.x() );
+
+
+	std::ofstream out_file;
+
+	out_file.open("test.out", std::ios_base::app);
 	
+	out_file << altitudeAddress << ',' << PAratio << ',' << flag << '\n';
+	
+	out_file.close();
+
 	// Check for valid altitude address
 	if(altitudeAddress >= 0 && altitudeAddress < 500 && track->GetNextVolume() != nullptr) 
 	{
 	  // Arguments:
 	  // altitude, energy lost, current energy before loss calculation, particle type
-	  LogEnergyToSpecificHistogram(altitudeAddress, energyDep, energyBefore, flag);
+	  //LogEnergyToSpecificHistogram(altitudeAddress, energyDep, energyBefore, flag);
 	}
 	else // escape outside simulation 
 	{
 	  // Arguments:
 	  // altitude, current energy, current energy, particle type
-	  LogEnergyToSpecificHistogram(500, energyAfter, energyAfter, flag);
+	  //LogEnergyToSpecificHistogram(500, energyAfter, energyAfter, flag);
 	  track->SetTrackStatus(fStopAndKill);
 	}
 
