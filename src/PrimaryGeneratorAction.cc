@@ -85,8 +85,11 @@ void PrimaryGeneratorAction::GenerateElectrons(ParticleSample* r)
   std::ifstream inputFile; 
 
   // Initial position RV's
-  G4double theta = G4UniformRand() * 2. * fPI; // u ~ Unif[0, 2 pi)
-  G4double radialPosition = G4UniformRand();  // [0, 1)
+  //G4double theta = G4UniformRand() * 2. * fPI; // u ~ Unif[0, 2 pi)
+  G4double theta = 0;
+  //G4double radialPosition = G4UniformRand();  // [0, 1)
+  G4double radialPosition = 1.;
+
   //G4double diskRadius = 400.*km;
   G4double diskRadius = 0.01*km;
 
@@ -107,7 +110,8 @@ void PrimaryGeneratorAction::GenerateElectrons(ParticleSample* r)
   
 
   // Angular RV's
-  G4double gyroPhase  = G4UniformRand() * 2. * fPI;
+  //G4double gyroPhase  = G4UniformRand() * 2. * fPI;
+  G4double gyroPhase  = 0.;
   //G4double pitchAngle = (G4UniformRand()*2.-1.) * maxPitchAngle * fPI / 180.; 
 
   G4double pitchAngle;
