@@ -62,6 +62,8 @@ public:
   virtual ~F03FieldSetup();
 
   void SetStepperType( G4int i ) { fStepperType = i; }
+  
+  G4int GetStepperType() { return fStepperType; }
 
   void SetStepper();
 

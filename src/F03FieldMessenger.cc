@@ -49,6 +49,7 @@ F03FieldMessenger::F03FieldMessenger(F03FieldSetup* fieldSetup)
    fEMfieldSetup(fieldSetup),
    fFieldDir(0),
    fStepperCmd(0),
+   fGetStepper(0),
    fMagFieldCmd(0),
    fMinStepCmd(0),
    fUpdateCmd(0)
@@ -67,6 +68,10 @@ F03FieldMessenger::F03FieldMessenger(F03FieldSetup* fieldSetup)
   fUpdateCmd->SetGuidance("This command MUST be applied before \"beamOn\" ");
   fUpdateCmd->SetGuidance("if you changed geometrical value(s).");
   fUpdateCmd->AvailableForStates(G4State_Idle);
+  
+  fGetStepper = new G4UIcmdWithoutParameter("/field/getStepperType",this);
+  fGetStepper->SetGuidance("");
+  fGetStepper->AvailableForStates(G4State_PreInit,G4State_Idle);
  
   fMagFieldCmd = new G4UIcmdWithADoubleAndUnit("/field/setFieldZ",this);
   fMagFieldCmd->SetGuidance("Define magnetic field.");
@@ -100,8 +105,10 @@ void F03FieldMessenger::SetNewValue( G4UIcommand* command, G4String newValue)
 {
   if( command == fStepperCmd )
     fEMfieldSetup->SetStepperType(fStepperCmd->GetNewIntValue(newValue));
+  
   if( command == fUpdateCmd )
     fEMfieldSetup->UpdateField();
+  
   if( command == fMagFieldCmd )
   {
     fEMfieldSetup->SetFieldValue(fMagFieldCmd->GetNewDoubleValue(newValue));
@@ -111,7 +118,10 @@ void F03FieldMessenger::SetNewValue( G4UIcommand* command, G4String newValue)
   */
   }
   if( command == fMinStepCmd )
-    fEMfieldSetup->SetMinStep(fMinStepCmd->GetNewDoubleValue(newValue));
+	fEMfieldSetup->SetMinStep(fMinStepCmd->GetNewDoubleValue(newValue));
+
+  if( command == fGetStepper )
+	  G4cout << "Stepper type = " << fEMfieldSetup->GetStepperType() << G4endl;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

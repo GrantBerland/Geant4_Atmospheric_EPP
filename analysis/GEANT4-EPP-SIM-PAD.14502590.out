@@ -1,0 +1,3187 @@
+
+
+          ################################
+          !!! G4Backtrace is activated !!!
+          ################################
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-00-patch-01 [MT]   (8-March-2022)
+  << in Multi-threaded mode >> 
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+G4PhysListFactory::GetReferencePhysList <QBBC>  EMoption= 0
+<<< Reference Physics List QBBC 
+
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Registered graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRepFile (HepRepFile)
+  RayTracer (RayTracer)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByAttribute
+  drawByCharge
+  drawByOriginVolume
+  drawByParticleID
+  drawByEncounteredVolume
+
+Registered models:
+  None
+
+Registered filter factories:
+  attributeFilter
+  chargeFilter
+  originVolumeFilter
+  particleFilter
+  encounteredVolumeFilter
+
+Registered filters:
+  None
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+"/vis/list" to see available colours.
+Checking overlaps for volume AtmosphereLayer0:0 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer1:1 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer2:2 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer3:3 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer4:4 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer5:5 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer6:6 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer7:7 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer8:8 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer9:9 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer10:10 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer11:11 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer12:12 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer13:13 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer14:14 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer15:15 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer16:16 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer17:17 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer18:18 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer19:19 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer20:20 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer21:21 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer22:22 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer23:23 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer24:24 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer25:25 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer26:26 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer27:27 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer28:28 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer29:29 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer30:30 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer31:31 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer32:32 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer33:33 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer34:34 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer35:35 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer36:36 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer37:37 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer38:38 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer39:39 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer40:40 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer41:41 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer42:42 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer43:43 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer44:44 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer45:45 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer46:46 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer47:47 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer48:48 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer49:49 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer50:50 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer51:51 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer52:52 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer53:53 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer54:54 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer55:55 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer56:56 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer57:57 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer58:58 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer59:59 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer60:60 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer61:61 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer62:62 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer63:63 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer64:64 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer65:65 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer66:66 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer67:67 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer68:68 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer69:69 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer70:70 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer71:71 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer72:72 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer73:73 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer74:74 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer75:75 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer76:76 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer77:77 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer78:78 (G4Tubs) ... 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomVol1002
+      issued by : G4PVPlacement::CheckOverlaps()
+Sample point is not on the surface !
+          The issue is detected for volume AtmosphereLayer78:78 (G4Tubs)
+          generated point (-3.84749e+08,-9.23021e+08,457650) is inside
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+Checking overlaps for volume AtmosphereLayer79:79 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer80:80 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer81:81 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer82:82 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer83:83 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer84:84 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer85:85 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer86:86 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer87:87 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer88:88 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer89:89 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer90:90 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer91:91 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer92:92 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer93:93 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer94:94 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer95:95 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer96:96 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer97:97 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer98:98 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer99:99 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer100:100 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer101:101 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer102:102 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer103:103 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer104:104 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer105:105 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer106:106 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer107:107 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer108:108 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer109:109 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer110:110 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer111:111 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer112:112 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer113:113 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer114:114 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer115:115 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer116:116 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer117:117 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer118:118 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer119:119 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer120:120 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer121:121 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer122:122 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer123:123 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer124:124 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer125:125 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer126:126 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer127:127 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer128:128 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer129:129 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer130:130 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer131:131 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer132:132 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer133:133 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer134:134 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer135:135 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer136:136 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer137:137 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer138:138 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer139:139 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer140:140 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer141:141 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer142:142 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer143:143 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer144:144 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer145:145 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer146:146 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer147:147 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer148:148 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer149:149 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer150:150 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer151:151 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer152:152 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer153:153 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer154:154 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer155:155 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer156:156 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer157:157 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer158:158 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer159:159 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer160:160 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer161:161 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer162:162 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer163:163 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer164:164 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer165:165 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer166:166 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer167:167 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer168:168 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer169:169 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer170:170 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer171:171 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer172:172 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer173:173 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer174:174 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer175:175 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer176:176 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer177:177 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer178:178 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer179:179 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer180:180 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer181:181 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer182:182 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer183:183 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer184:184 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer185:185 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer186:186 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer187:187 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer188:188 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer189:189 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer190:190 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer191:191 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer192:192 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer193:193 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer194:194 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer195:195 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer196:196 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer197:197 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer198:198 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer199:199 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer200:200 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer201:201 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer202:202 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer203:203 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer204:204 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer205:205 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer206:206 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer207:207 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer208:208 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer209:209 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer210:210 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer211:211 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer212:212 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer213:213 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer214:214 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer215:215 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer216:216 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer217:217 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer218:218 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer219:219 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer220:220 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer221:221 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer222:222 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer223:223 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer224:224 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer225:225 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer226:226 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer227:227 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer228:228 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer229:229 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer230:230 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer231:231 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer232:232 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer233:233 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer234:234 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer235:235 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer236:236 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer237:237 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer238:238 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer239:239 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer240:240 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer241:241 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer242:242 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer243:243 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer244:244 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer245:245 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer246:246 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer247:247 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer248:248 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer249:249 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer250:250 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer251:251 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer252:252 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer253:253 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer254:254 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer255:255 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer256:256 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer257:257 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer258:258 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer259:259 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer260:260 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer261:261 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer262:262 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer263:263 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer264:264 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer265:265 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer266:266 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer267:267 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer268:268 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer269:269 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer270:270 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer271:271 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer272:272 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer273:273 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer274:274 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer275:275 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer276:276 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer277:277 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer278:278 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer279:279 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer280:280 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer281:281 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer282:282 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer283:283 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer284:284 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer285:285 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer286:286 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer287:287 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer288:288 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer289:289 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer290:290 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer291:291 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer292:292 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer293:293 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer294:294 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer295:295 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer296:296 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer297:297 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer298:298 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer299:299 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer300:300 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer301:301 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer302:302 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer303:303 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer304:304 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer305:305 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer306:306 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer307:307 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer308:308 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer309:309 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer310:310 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer311:311 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer312:312 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer313:313 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer314:314 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer315:315 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer316:316 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer317:317 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer318:318 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer319:319 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer320:320 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer321:321 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer322:322 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer323:323 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer324:324 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer325:325 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer326:326 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer327:327 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer328:328 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer329:329 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer330:330 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer331:331 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer332:332 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer333:333 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer334:334 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer335:335 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer336:336 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer337:337 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer338:338 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer339:339 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer340:340 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer341:341 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer342:342 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer343:343 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer344:344 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer345:345 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer346:346 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer347:347 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer348:348 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer349:349 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer350:350 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer351:351 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer352:352 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer353:353 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer354:354 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer355:355 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer356:356 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer357:357 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer358:358 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer359:359 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer360:360 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer361:361 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer362:362 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer363:363 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer364:364 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer365:365 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer366:366 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer367:367 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer368:368 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer369:369 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer370:370 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer371:371 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer372:372 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer373:373 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer374:374 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer375:375 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer376:376 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer377:377 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer378:378 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer379:379 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer380:380 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer381:381 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer382:382 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer383:383 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer384:384 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer385:385 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer386:386 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer387:387 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer388:388 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer389:389 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer390:390 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer391:391 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer392:392 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer393:393 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer394:394 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer395:395 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer396:396 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer397:397 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer398:398 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer399:399 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer400:400 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer401:401 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer402:402 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer403:403 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer404:404 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer405:405 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer406:406 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer407:407 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer408:408 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer409:409 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer410:410 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer411:411 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer412:412 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer413:413 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer414:414 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer415:415 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer416:416 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer417:417 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer418:418 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer419:419 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer420:420 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer421:421 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer422:422 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer423:423 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer424:424 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer425:425 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer426:426 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer427:427 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer428:428 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer429:429 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer430:430 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer431:431 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer432:432 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer433:433 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer434:434 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer435:435 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer436:436 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer437:437 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer438:438 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer439:439 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer440:440 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer441:441 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer442:442 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer443:443 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer444:444 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer445:445 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer446:446 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer447:447 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer448:448 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer449:449 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer450:450 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer451:451 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer452:452 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer453:453 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer454:454 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer455:455 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer456:456 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer457:457 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer458:458 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer459:459 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer460:460 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer461:461 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer462:462 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer463:463 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer464:464 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer465:465 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer466:466 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer467:467 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer468:468 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer469:469 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer470:470 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer471:471 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer472:472 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer473:473 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer474:474 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer475:475 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer476:476 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer477:477 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer478:478 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer479:479 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer480:480 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer481:481 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer482:482 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer483:483 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer484:484 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer485:485 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer486:486 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer487:487 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer488:488 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer489:489 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer490:490 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer491:491 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer492:492 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer493:493 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer494:494 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer495:495 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer496:496 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer497:497 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer498:498 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer499:499 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer500:500 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer501:501 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer502:502 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer503:503 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer504:504 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer505:505 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer506:506 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer507:507 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer508:508 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer509:509 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer510:510 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer511:511 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer512:512 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer513:513 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer514:514 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer515:515 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer516:516 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer517:517 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer518:518 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer519:519 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer520:520 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer521:521 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer522:522 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer523:523 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer524:524 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer525:525 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer526:526 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer527:527 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer528:528 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer529:529 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer530:530 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer531:531 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer532:532 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer533:533 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer534:534 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer535:535 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer536:536 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer537:537 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer538:538 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer539:539 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer540:540 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer541:541 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer542:542 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer543:543 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer544:544 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer545:545 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer546:546 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer547:547 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer548:548 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer549:549 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer550:550 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer551:551 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer552:552 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer553:553 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer554:554 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer555:555 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer556:556 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer557:557 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer558:558 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer559:559 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer560:560 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer561:561 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer562:562 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer563:563 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer564:564 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer565:565 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer566:566 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer567:567 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer568:568 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer569:569 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer570:570 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer571:571 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer572:572 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer573:573 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer574:574 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer575:575 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer576:576 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer577:577 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer578:578 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer579:579 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer580:580 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer581:581 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer582:582 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer583:583 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer584:584 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer585:585 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer586:586 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer587:587 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer588:588 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer589:589 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer590:590 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer591:591 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer592:592 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer593:593 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer594:594 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer595:595 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer596:596 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer597:597 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer598:598 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer599:599 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer600:600 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer601:601 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer602:602 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer603:603 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer604:604 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer605:605 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer606:606 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer607:607 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer608:608 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer609:609 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer610:610 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer611:611 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer612:612 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer613:613 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer614:614 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer615:615 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer616:616 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer617:617 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer618:618 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer619:619 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer620:620 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer621:621 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer622:622 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer623:623 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer624:624 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer625:625 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer626:626 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer627:627 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer628:628 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer629:629 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer630:630 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer631:631 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer632:632 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer633:633 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer634:634 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer635:635 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer636:636 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer637:637 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer638:638 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer639:639 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer640:640 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer641:641 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer642:642 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer643:643 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer644:644 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer645:645 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer646:646 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer647:647 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer648:648 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer649:649 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer650:650 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer651:651 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer652:652 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer653:653 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer654:654 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer655:655 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer656:656 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer657:657 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer658:658 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer659:659 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer660:660 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer661:661 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer662:662 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer663:663 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer664:664 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer665:665 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer666:666 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer667:667 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer668:668 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer669:669 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer670:670 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer671:671 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer672:672 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer673:673 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer674:674 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer675:675 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer676:676 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer677:677 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer678:678 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer679:679 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer680:680 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer681:681 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer682:682 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer683:683 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer684:684 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer685:685 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer686:686 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer687:687 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer688:688 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer689:689 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer690:690 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer691:691 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer692:692 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer693:693 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer694:694 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer695:695 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer696:696 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer697:697 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer698:698 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer699:699 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer700:700 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer701:701 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer702:702 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer703:703 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer704:704 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer705:705 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer706:706 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer707:707 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer708:708 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer709:709 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer710:710 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer711:711 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer712:712 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer713:713 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer714:714 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer715:715 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer716:716 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer717:717 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer718:718 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer719:719 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer720:720 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer721:721 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer722:722 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer723:723 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer724:724 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer725:725 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer726:726 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer727:727 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer728:728 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer729:729 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer730:730 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer731:731 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer732:732 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer733:733 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer734:734 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer735:735 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer736:736 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer737:737 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer738:738 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer739:739 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer740:740 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer741:741 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer742:742 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer743:743 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer744:744 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer745:745 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer746:746 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer747:747 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer748:748 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer749:749 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer750:750 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer751:751 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer752:752 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer753:753 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer754:754 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer755:755 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer756:756 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer757:757 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer758:758 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer759:759 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer760:760 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer761:761 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer762:762 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer763:763 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer764:764 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer765:765 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer766:766 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer767:767 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer768:768 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer769:769 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer770:770 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer771:771 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer772:772 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer773:773 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer774:774 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer775:775 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer776:776 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer777:777 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer778:778 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer779:779 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer780:780 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer781:781 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer782:782 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer783:783 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer784:784 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer785:785 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer786:786 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer787:787 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer788:788 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer789:789 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer790:790 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer791:791 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer792:792 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer793:793 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer794:794 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer795:795 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer796:796 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer797:797 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer798:798 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer799:799 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer800:800 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer801:801 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer802:802 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer803:803 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer804:804 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer805:805 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer806:806 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer807:807 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer808:808 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer809:809 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer810:810 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer811:811 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer812:812 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer813:813 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer814:814 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer815:815 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer816:816 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer817:817 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer818:818 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer819:819 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer820:820 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer821:821 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer822:822 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer823:823 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer824:824 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer825:825 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer826:826 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer827:827 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer828:828 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer829:829 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer830:830 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer831:831 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer832:832 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer833:833 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer834:834 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer835:835 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer836:836 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer837:837 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer838:838 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer839:839 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer840:840 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer841:841 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer842:842 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer843:843 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer844:844 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer845:845 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer846:846 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer847:847 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer848:848 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer849:849 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer850:850 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer851:851 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer852:852 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer853:853 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer854:854 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer855:855 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer856:856 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer857:857 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer858:858 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer859:859 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer860:860 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer861:861 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer862:862 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer863:863 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer864:864 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer865:865 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer866:866 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer867:867 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer868:868 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer869:869 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer870:870 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer871:871 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer872:872 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer873:873 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer874:874 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer875:875 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer876:876 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer877:877 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer878:878 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer879:879 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer880:880 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer881:881 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer882:882 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer883:883 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer884:884 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer885:885 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer886:886 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer887:887 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer888:888 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer889:889 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer890:890 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer891:891 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer892:892 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer893:893 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer894:894 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer895:895 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer896:896 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer897:897 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer898:898 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer899:899 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer900:900 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer901:901 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer902:902 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer903:903 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer904:904 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer905:905 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer906:906 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer907:907 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer908:908 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer909:909 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer910:910 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer911:911 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer912:912 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer913:913 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer914:914 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer915:915 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer916:916 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer917:917 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer918:918 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer919:919 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer920:920 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer921:921 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer922:922 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer923:923 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer924:924 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer925:925 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer926:926 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer927:927 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer928:928 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer929:929 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer930:930 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer931:931 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer932:932 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer933:933 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer934:934 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer935:935 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer936:936 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer937:937 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer938:938 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer939:939 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer940:940 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer941:941 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer942:942 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer943:943 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer944:944 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer945:945 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer946:946 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer947:947 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer948:948 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer949:949 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer950:950 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer951:951 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer952:952 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer953:953 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer954:954 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer955:955 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer956:956 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer957:957 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer958:958 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer959:959 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer960:960 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer961:961 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer962:962 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer963:963 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer964:964 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer965:965 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer966:966 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer967:967 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer968:968 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer969:969 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer970:970 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer971:971 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer972:972 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer973:973 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer974:974 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer975:975 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer976:976 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer977:977 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer978:978 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer979:979 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer980:980 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer981:981 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer982:982 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer983:983 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer984:984 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer985:985 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer986:986 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer987:987 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer988:988 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer989:989 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer990:990 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer991:991 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer992:992 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer993:993 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer994:994 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer995:995 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer996:996 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer997:997 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer998:998 (G4Tubs) ... OK! 
+Checking overlaps for volume AtmosphereLayer999:999 (G4Tubs) ... OK! 
+F03FieldSetup::UpdateField > The minimal step is equal to 1000 mm
+                            Stepper Type chosen = 10
+ode45 is called
+### HadronInelasticQBBC Construct Process:
+    Emin(FTFP)= 3 GeV; Emax(FTFP)= 100000 GeV
+    Emin(BERT)= 1 GeV; Emax(BERT)= 6 GeV; Emax(BERTpions)= 12 GeV;
+    Emin(BIC) = 0 GeV; Emax(BIC)= 1.5 GeV.
+### Adding tracking cuts for neutron  TimeCut(ns)= 10000  KinEnergyCut(MeV)= 0
+
+====================================================================
+                  HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+---------------------------------------------------
+                           Hadronic Processes for neutron
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronElasticXS: 0 eV  ---> 100 TeV
+
+  Process: neutronInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 1 GeV ---> 6 GeV
+        Model:            Binary Cascade: 0 eV  ---> 1.5 GeV
+     Cr_sctns:      G4NeutronInelasticXS: 0 eV  ---> 100 TeV
+
+  Process: nCapture
+        Model:               nRadCapture: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronCaptureXS: 0 eV  ---> 100 TeV
+
+  Process: nKiller
+
+---------------------------------------------------
+                           Hadronic Processes for B-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: B-Inelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for D-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: D-Inelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for GenericIon
+
+  Process: ionInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: ionElastic
+        Model:          NNDiffuseElastic: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: He3Inelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: alphaInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_He3Inelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_alphaInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_deuteronInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_lambda
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: anti_lambdaInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_neutron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_neutronInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_proton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_protonInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_tritonInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: dInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for e+
+
+  Process: positronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for e-
+
+  Process: electronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for gamma
+
+  Process: photonNuclear
+        Model:               GammaNPreco: 0 eV  ---> 200 MeV
+        Model:            BertiniCascade: 199 MeV ---> 6 GeV
+        Model:           TheoFSGenerator: 3 GeV ---> 100 TeV
+     Cr_sctns:            GammaNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon+
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: kaon+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: kaon-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for lambda
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: lambdaInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu+
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu-
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+  Process: muMinusCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for pi+
+
+  Process: hadElastic
+        Model:           hElasticGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: pi+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 1 GeV ---> 12 GeV
+        Model:            Binary Cascade: 0 eV  ---> 1.5 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for pi-
+
+  Process: hadElastic
+        Model:           hElasticGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: pi-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 1 GeV ---> 12 GeV
+        Model:            Binary Cascade: 0 eV  ---> 1.5 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for proton
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: protonInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 1 GeV ---> 6 GeV
+        Model:            Binary Cascade: 0 eV  ---> 1.5 GeV
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for sigma-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: sigma-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: tInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:     G4ParticleInelasticXS: 0 eV  ---> 25.6 PeV
+
+================================================================
+=======================================================================
+======       Pre-compound/De-excitation Physics Parameters     ========
+=======================================================================
+Type of pre-compound inverse x-section              3
+Pre-compound model active                           1
+Pre-compound excitation low energy (MeV)            0.1
+Pre-compound excitation high energy (MeV)           30
+Type of de-excitation inverse x-section             3
+Type of de-excitation factory                       Evaporation+GEM
+Number of de-excitation channels                    68
+Min excitation energy (keV)                         0.01
+Min energy per nucleon for multifragmentation (MeV) 2e+05
+Limit excitation energy for Fermi BreakUp (MeV)     20
+Level density (1/MeV)                               0.075
+Use simple level density model                      1
+Use discrete excitation energy of the residual      0
+Time limit for long lived isomeres (ns)             1
+Isomer production flag                              1
+Internal e- conversion flag                         1
+Store e- internal conversion data                   0
+Correlated gamma emission flag                      0
+Max 2J for sampling of angular correlations         10
+=======================================================================
+G4WT1 > Energy deposition being recorded...Histogram initialized!
+G4WT0 > Energy deposition being recorded...Histogram initialized!
+G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00683151 MeV energy  ( pre-Step = 0.00683151 ) 
+   momentum = (0.0244413,-0.0751934,-0.0278754) mag= 0.0838359
+   position = (2468.31,3.43539e+07,-3.52626e+08) is in volume 'AtmosphereLayer147',  its material is 'AirLayer147' with density = 2.1935e-12 g/cm^3 
+ Total number of Steps by this track: 1003
+ Length of this step = 101771 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 2149357 )
+ =============== Recommendations / advice ====================
+ Recommendations to address this issue (Transport-001-ExcessSteps)
+ This warning is controlled by the SetThresholdWarningEnergy  method of G4Transportation.  
+ Current value of 'warning' threshold= 0 MeV 
+ - If 'unimportant' particles (with energy low enough not to matter in your   application, then increase its value. 
+ - If particles of high-enough energy to be important are being  killed, you can 
+   a) Increase the trial steps using the method  SetThresholdTrials().    Particles above the 'important' threshold 
+  will be given this many 'chances'.  The default value was 10, and the current value is 300
+   b) Increase the energy which you consider 'important' (above this they are killed only after extra trials), using the method SetThresholdImportantEnergy() 
+      Note: this can incur a potentially high cost in extra simulation time  if more tracks require very large number of integration steps . 
+   c) investigate alternative integration methods 
+    e.g.  Helical methods for uniform or almost uniform fields or else higher order RK methods such as DormandPrince78 
+ This information is provided 5 times. Current count: 1 / 5
+ =============================================================
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00114486 MeV energy  ( pre-Step = 0.00114486 ) 
+   momentum = (-0.00652484,-0.0327867,-0.0073357) mag= 0.034225
+   position = (11569.6,2.90977e+07,-3.29327e+08) is in volume 'AtmosphereLayer170',  its material is 'AirLayer170' with density = 6.56235e-13 g/cm^3 
+ Total number of Steps by this track: 320
+ Length of this step = 65107.2 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 3396202 )
+ =============== Recommendations / advice ====================
+ Recommendations to address this issue (Transport-001-ExcessSteps)
+ This warning is controlled by the SetThresholdWarningEnergy  method of G4Transportation.  
+ Current value of 'warning' threshold= 0 MeV 
+ - If 'unimportant' particles (with energy low enough not to matter in your   application, then increase its value. 
+ - If particles of high-enough energy to be important are being  killed, you can 
+   a) Increase the trial steps using the method  SetThresholdTrials().    Particles above the 'important' threshold 
+  will be given this many 'chances'.  The default value was 10, and the current value is 300
+   b) Increase the energy which you consider 'important' (above this they are killed only after extra trials), using the method SetThresholdImportantEnergy() 
+      Note: this can incur a potentially high cost in extra simulation time  if more tracks require very large number of integration steps . 
+   c) investigate alternative integration methods 
+    e.g.  Helical methods for uniform or almost uniform fields or else higher order RK methods such as DormandPrince78 
+ This information is provided 5 times. Current count: 2 / 5
+ =============================================================
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.0198852 MeV energy  ( pre-Step = 0.0198852 ) 
+   momentum = (0.137681,0.0413768,-0.00706987) mag= 0.143938
+   position = (5785.11,4.00932e+07,-3.77699e+08) is in volume 'AtmosphereLayer122',  its material is 'AirLayer122' with density = 1.3902e-11 g/cm^3 
+ Total number of Steps by this track: 1242
+ Length of this step = 132450 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 3457633 )
+ =============== Recommendations / advice ====================
+ Recommendations to address this issue (Transport-001-ExcessSteps)
+ This warning is controlled by the SetThresholdWarningEnergy  method of G4Transportation.  
+ Current value of 'warning' threshold= 0 MeV 
+ - If 'unimportant' particles (with energy low enough not to matter in your   application, then increase its value. 
+ - If particles of high-enough energy to be important are being  killed, you can 
+   a) Increase the trial steps using the method  SetThresholdTrials().    Particles above the 'important' threshold 
+  will be given this many 'chances'.  The default value was 10, and the current value is 300
+   b) Increase the energy which you consider 'important' (above this they are killed only after extra trials), using the method SetThresholdImportantEnergy() 
+      Note: this can incur a potentially high cost in extra simulation time  if more tracks require very large number of integration steps . 
+   c) investigate alternative integration methods 
+    e.g.  Helical methods for uniform or almost uniform fields or else higher order RK methods such as DormandPrince78 
+ This information is provided 5 times. Current count: 3 / 5
+ =============================================================
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00310877 MeV energy  ( pre-Step = 0.00310877 ) 
+   momentum = (0.027435,-0.0485471,-0.00879345) mag= 0.0564519
+   position = (165585,1.10338e+07,-2.48068e+08) is in volume 'AtmosphereLayer251',  its material is 'AirLayer251' with density = 2.91118e-14 g/cm^3 
+ Total number of Steps by this track: 2585
+ Length of this step = 85208.7 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 5515148 )
+ =============== Recommendations / advice ====================
+ Recommendations to address this issue (Transport-001-ExcessSteps)
+ This warning is controlled by the SetThresholdWarningEnergy  method of G4Transportation.  
+ Current value of 'warning' threshold= 0 MeV 
+ - If 'unimportant' particles (with energy low enough not to matter in your   application, then increase its value. 
+ - If particles of high-enough energy to be important are being  killed, you can 
+   a) Increase the trial steps using the method  SetThresholdTrials().    Particles above the 'important' threshold 
+  will be given this many 'chances'.  The default value was 10, and the current value is 300
+   b) Increase the energy which you consider 'important' (above this they are killed only after extra trials), using the method SetThresholdImportantEnergy() 
+      Note: this can incur a potentially high cost in extra simulation time  if more tracks require very large number of integration steps . 
+   c) investigate alternative integration methods 
+    e.g.  Helical methods for uniform or almost uniform fields or else higher order RK methods such as DormandPrince78 
+ This information is provided 5 times. Current count: 4 / 5
+ =============================================================
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > Writing results to histogram...complete!
+G4WT0 > Writing results to histogram...complete!
+Writing results to histogram...complete!
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+"New run: PA 0 deg"
+G4WT0 > "New run: PA 0 deg"
+G4WT1 > "New run: PA 0 deg"
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00109777 MeV energy  ( pre-Step = 0.00109777 ) 
+   momentum = (-0.0229254,0.0237178,-0.00591724) mag= 0.0335131
+   position = (-33471.2,3.19114e+07,-3.41875e+08) is in volume 'AtmosphereLayer158',  its material is 'AirLayer158' with density = 1.18984e-12 g/cm^3 
+ Total number of Steps by this track: 300
+ Length of this step = 66089.5 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 8553012 )
+ =============== Recommendations / advice ====================
+ Recommendations to address this issue (Transport-001-ExcessSteps)
+ This warning is controlled by the SetThresholdWarningEnergy  method of G4Transportation.  
+ Current value of 'warning' threshold= 0 MeV 
+ - If 'unimportant' particles (with energy low enough not to matter in your   application, then increase its value. 
+ - If particles of high-enough energy to be important are being  killed, you can 
+   a) Increase the trial steps using the method  SetThresholdTrials().    Particles above the 'important' threshold 
+  will be given this many 'chances'.  The default value was 10, and the current value is 300
+   b) Increase the energy which you consider 'important' (above this they are killed only after extra trials), using the method SetThresholdImportantEnergy() 
+      Note: this can incur a potentially high cost in extra simulation time  if more tracks require very large number of integration steps . 
+   c) investigate alternative integration methods 
+    e.g.  Helical methods for uniform or almost uniform fields or else higher order RK methods such as DormandPrince78 
+ This information is provided 5 times. Current count: 5 / 5
+ =============================================================
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00153303 MeV energy  ( pre-Step = 0.00153303 ) 
+   momentum = (0.0200695,0.0329131,0.00911315) mag= 0.039612
+   position = (19940.2,2.95924e+07,-3.31587e+08) is in volume 'AtmosphereLayer168',  its material is 'AirLayer168' with density = 7.21672e-13 g/cm^3 
+ Total number of Steps by this track: 384
+ Length of this step = 70038.4 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 10310498 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00300547 MeV energy  ( pre-Step = 0.00300547 ) 
+   momentum = (0.044785,-0.0312824,-0.00981481) mag= 0.0555033
+   position = (745.86,3.66418e+07,-3.62681e+08) is in volume 'AtmosphereLayer137',  its material is 'AirLayer137' with density = 4.15375e-12 g/cm^3 
+ Total number of Steps by this track: 364
+ Length of this step = 82327.2 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 10278268 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00313085 MeV energy  ( pre-Step = 0.00313085 ) 
+   momentum = (-0.0282551,-0.0464804,-0.015835) mag= 0.0566527
+   position = (-38208.2,3.79143e+07,-3.68537e+08) is in volume 'AtmosphereLayer131',  its material is 'AirLayer131' with density = 6.43335e-12 g/cm^3 
+ Total number of Steps by this track: 401
+ Length of this step = 83192.4 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 12298355 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > Writing results to histogram...complete!
+G4WT1 > Writing results to histogram...complete!
+Writing results to histogram...complete!
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+"New run: PA 5 deg"
+G4WT1 > "New run: PA 5 deg"
+G4WT0 > "New run: PA 5 deg"
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00169143 MeV energy  ( pre-Step = 0.00169143 ) 
+   momentum = (0.0136352,0.0384007,0.00842435) mag= 0.0416113
+   position = (-125888,3.10535e+07,-3.38021e+08) is in volume 'AtmosphereLayer161',  its material is 'AirLayer161' with density = 1.01923e-12 g/cm^3 
+ Total number of Steps by this track: 2504
+ Length of this step = 71647 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 14604531 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00169893 MeV energy  ( pre-Step = 0.00169893 ) 
+   momentum = (-0.0328181,0.0252454,0.0049829) mag= 0.0417036
+   position = (5718.13,2.7193e+07,-3.20913e+08) is in volume 'AtmosphereLayer179',  its material is 'AirLayer179' with density = 4.35017e-13 g/cm^3 
+ Total number of Steps by this track: 426
+ Length of this step = 72012.7 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 18590860 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > Writing results to histogram...complete!
+G4WT0 > Writing results to histogram...complete!
+Writing results to histogram...complete!
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+"New run: PA 10 deg"
+G4WT1 > "New run: PA 10 deg"
+G4WT0 > "New run: PA 10 deg"
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00336194 MeV energy  ( pre-Step = 0.00336194 ) 
+   momentum = (-0.0496341,0.0313331,0.0013782) mag= 0.0587129
+   position = (-23824.9,3.71033e+07,-3.64769e+08) is in volume 'AtmosphereLayer135',  its material is 'AirLayer135' with density = 4.78022e-12 g/cm^3 
+ Total number of Steps by this track: 926
+ Length of this step = 84771.8 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 23765387 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > Writing results to histogram...complete!
+G4WT0 > Writing results to histogram...complete!
+Writing results to histogram...complete!
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+"New run: PA 15 deg"
+G4WT1 > "New run: PA 15 deg"
+G4WT0 > "New run: PA 15 deg"
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00818015 MeV energy  ( pre-Step = 0.00818015 ) 
+   momentum = (0.0891306,0.0210039,0.00644916) mag= 0.0917988
+   position = (45178.7,3.71254e+07,-3.65381e+08) is in volume 'AtmosphereLayer134',  its material is 'AirLayer134' with density = 5.13787e-12 g/cm^3 
+ Total number of Steps by this track: 899
+ Length of this step = 105757 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 34564597 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.0385668 MeV energy  ( pre-Step = 0.0385668 ) 
+   momentum = (0.0372166,-0.19413,-0.0427883) mag= 0.202244
+   position = (99474.8,4.12714e+07,-3.83564e+08) is in volume 'AtmosphereLayer116',  its material is 'AirLayer116' with density = 2.71188e-11 g/cm^3 
+ Total number of Steps by this track: 882
+ Length of this step = 156304 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 38007188 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > Writing results to histogram...complete!
+G4WT1 > Writing results to histogram...complete!
+Writing results to histogram...complete!
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+"New run: PA 20 deg"
+G4WT0 > "New run: PA 20 deg"
+G4WT1 > "New run: PA 20 deg"
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.403298 MeV energy  ( pre-Step = 0.403298 ) 
+   momentum = (-0.0310676,0.737959,0.171082) mag= 0.758168
+   position = (-60764.7,4.48356e+07,-4.00105e+08) is in volume 'AtmosphereLayer99',  its material is 'AirLayer99' with density = 4.25572e-10 g/cm^3 
+ Total number of Steps by this track: 2262
+ Length of this step = 301476 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 39277563 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00262287 MeV energy  ( pre-Step = 0.00262287 ) 
+   momentum = (0.046256,0.0223159,0.00705953) mag= 0.0518406
+   position = (93893.5,2.88254e+07,-3.28068e+08) is in volume 'AtmosphereLayer171',  its material is 'AirLayer171' with density = 6.26115e-13 g/cm^3 
+ Total number of Steps by this track: 3404
+ Length of this step = 80181.8 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 41871051 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00274645 MeV energy  ( pre-Step = 0.00274645 ) 
+   momentum = (-0.0139968,0.0496943,0.0122057) mag= 0.053051
+   position = (2447.45,3.82143e+07,-3.69613e+08) is in volume 'AtmosphereLayer130',  its material is 'AirLayer130' with density = 6.95508e-12 g/cm^3 
+ Total number of Steps by this track: 1058
+ Length of this step = 80318.7 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 43367430 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00427295 MeV energy  ( pre-Step = 0.00427295 ) 
+   momentum = (0.0651403,-0.0118686,0.00104041) mag= 0.0662209
+   position = (94918.5,3.63744e+07,-3.62355e+08) is in volume 'AtmosphereLayer137',  its material is 'AirLayer137' with density = 4.15375e-12 g/cm^3 
+ Total number of Steps by this track: 1408
+ Length of this step = 89945.6 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 45486773 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > Writing results to histogram...complete!
+G4WT0 > Writing results to histogram...complete!
+Writing results to histogram...complete!
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+"New run: PA 25 deg"
+G4WT0 > "New run: PA 25 deg"
+G4WT1 > "New run: PA 25 deg"
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00271898 MeV energy  ( pre-Step = 0.00271898 ) 
+   momentum = (0.0519744,0.00918511,0.000686502) mag= 0.0527843
+   position = (198512,3.36106e+07,-3.4957e+08) is in volume 'AtmosphereLayer150',  its material is 'AirLayer150' with density = 1.84192e-12 g/cm^3 
+ Total number of Steps by this track: 2835
+ Length of this step = 80493.2 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 48265289 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00435394 MeV energy  ( pre-Step = 0.00435394 ) 
+   momentum = (-0.0584066,0.0310205,0.00975058) mag= 0.0668482
+   position = (39872.8,3.63679e+07,-3.61568e+08) is in volume 'AtmosphereLayer138',  its material is 'AirLayer138' with density = 3.87901e-12 g/cm^3 
+ Total number of Steps by this track: 569
+ Length of this step = 90356.4 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 50652888 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.140546 MeV energy  ( pre-Step = 0.140546 ) 
+   momentum = (0.238778,0.318713,0.0692679) mag= 0.404216
+   position = (-70022.1,4.30823e+07,-3.91466e+08) is in volume 'AtmosphereLayer108',  its material is 'AirLayer108' with density = 8.1771e-11 g/cm^3 
+ Total number of Steps by this track: 2865
+ Length of this step = 220570 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 50926274 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.0265842 MeV energy  ( pre-Step = 0.0265842 ) 
+   momentum = (-0.091455,-0.13654,-0.0294687) mag= 0.16696
+   position = (-9314.62,3.82873e+07,-3.70122e+08) is in volume 'AtmosphereLayer129',  its material is 'AirLayer129' with density = 7.53142e-12 g/cm^3 
+ Total number of Steps by this track: 1010
+ Length of this step = 142459 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 50987885 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.0014194 MeV energy  ( pre-Step = 0.0014194 ) 
+   momentum = (-0.00882306,-0.0357567,-0.00981073) mag= 0.0381135
+   position = (-32975.8,2.72676e+07,-3.21665e+08) is in volume 'AtmosphereLayer178',  its material is 'AirLayer178' with density = 4.54792e-13 g/cm^3 
+ Total number of Steps by this track: 1117
+ Length of this step = 68862.1 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 51531580 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00731423 MeV energy  ( pre-Step = 0.00731423 ) 
+   momentum = (0.0866355,0.00320568,0.00355496) mag= 0.0867676
+   position = (-79221.1,2.72423e+07,-3.21085e+08) is in volume 'AtmosphereLayer178',  its material is 'AirLayer178' with density = 4.54792e-13 g/cm^3 
+ Total number of Steps by this track: 4886
+ Length of this step = 103888 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 69044492 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > Writing results to histogram...complete!
+G4WT0 > Writing results to histogram...complete!
+Writing results to histogram...complete!
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+"New run: PA 30 deg"
+G4WT0 > "New run: PA 30 deg"
+G4WT1 > "New run: PA 30 deg"
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.118524 MeV energy  ( pre-Step = 0.118524 ) 
+   momentum = (0.313912,-0.187479,-0.0386003) mag= 0.367667
+   position = (-267110,3.7841e+07,-3.67079e+08) is in volume 'AtmosphereLayer132',  its material is 'AirLayer132' with density = 5.96005e-12 g/cm^3 
+ Total number of Steps by this track: 2873
+ Length of this step = 211553 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 71781560 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.541785 MeV energy  ( pre-Step = 0.541785 ) 
+   momentum = (0.894132,0.214373,0.0425021) mag= 0.920454
+   position = (-28807,3.99954e+07,-3.77694e+08) is in volume 'AtmosphereLayer122',  its material is 'AirLayer122' with density = 1.3902e-11 g/cm^3 
+ Total number of Steps by this track: 3774
+ Length of this step = 333904 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 59651777 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00780471 MeV energy  ( pre-Step = 0.00780471 ) 
+   momentum = (0.0252413,-0.0842955,-0.0171599) mag= 0.089651
+   position = (48983.2,3.50814e+07,-3.56085e+08) is in volume 'AtmosphereLayer143',  its material is 'AirLayer143' with density = 2.79973e-12 g/cm^3 
+ Total number of Steps by this track: 862
+ Length of this step = 104738 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 75487675 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00146441 MeV energy  ( pre-Step = 0.00146441 ) 
+   momentum = (0.0384689,0.0031685,-0.00297789) mag= 0.0387139
+   position = (71773.6,3.36095e+07,-3.49742e+08) is in volume 'AtmosphereLayer150',  its material is 'AirLayer150' with density = 1.84192e-12 g/cm^3 
+ Total number of Steps by this track: 682
+ Length of this step = 69071.2 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 75491782 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.668907 MeV energy  ( pre-Step = 0.668907 ) 
+   momentum = (-0.802894,-0.677865,-0.164068) mag= 1.06351
+   position = (349525,4.39807e+07,-3.96122e+08) is in volume 'AtmosphereLayer103',  its material is 'AirLayer103' with density = 1.89131e-10 g/cm^3 
+ Total number of Steps by this track: 2171
+ Length of this step = 357397 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 75776901 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00498996 MeV energy  ( pre-Step = 0.00498996 ) 
+   momentum = (0.0163384,0.0674115,0.0177022) mag= 0.0715865
+   position = (6095.23,3.0354e+07,-3.34898e+08) is in volume 'AtmosphereLayer165',  its material is 'AirLayer165' with density = 8.34652e-13 g/cm^3 
+ Total number of Steps by this track: 5683
+ Length of this step = 94068.6 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 76809032 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00860783 MeV energy  ( pre-Step = 0.00860783 ) 
+   momentum = (0.0464435,-0.0761364,-0.0302907) mag= 0.0941875
+   position = (-80160.3,4.22418e+07,-3.8781e+08) is in volume 'AtmosphereLayer112',  its material is 'AirLayer112' with density = 4.5757e-11 g/cm^3 
+ Total number of Steps by this track: 796
+ Length of this step = 107062 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 77592118 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00226772 MeV energy  ( pre-Step = 0.00226772 ) 
+   momentum = (0.0432124,0.0212799,0.00161291) mag= 0.0481949
+   position = (1676.27,3.84547e+07,-3.72105e+08) is in volume 'AtmosphereLayer127',  its material is 'AirLayer127' with density = 8.87774e-12 g/cm^3 
+ Total number of Steps by this track: 300
+ Length of this step = 76582.8 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 78670456 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > Writing results to histogram...complete!
+G4WT0 > Writing results to histogram...complete!
+Writing results to histogram...complete!
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+"New run: PA 35 deg"
+G4WT0 > "New run: PA 35 deg"
+G4WT1 > "New run: PA 35 deg"
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00848364 MeV energy  ( pre-Step = 0.00848364 ) 
+   momentum = (0.0707743,-0.0587201,-0.0168874) mag= 0.0934999
+   position = (71561.8,3.26988e+07,-3.47353e+08) is in volume 'AtmosphereLayer152',  its material is 'AirLayer152' with density = 1.64521e-12 g/cm^3 
+ Total number of Steps by this track: 679
+ Length of this step = 107207 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 80640742 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.756103 MeV energy  ( pre-Step = 0.756103 ) 
+   momentum = (0.412947,1.0548,0.247587) mag= 1.15949
+   position = (82818.9,3.91231e+07,-3.74307e+08) is in volume 'AtmosphereLayer125',  its material is 'AirLayer125' with density = 1.05446e-11 g/cm^3 
+ Total number of Steps by this track: 4021
+ Length of this step = 375059 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 72466413 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > Writing results to histogram...complete!
+G4WT1 > Writing results to histogram...complete!
+Writing results to histogram...complete!
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+"New run: PA 40 deg"
+G4WT0 > "New run: PA 40 deg"
+G4WT1 > "New run: PA 40 deg"
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.0631813 MeV energy  ( pre-Step = 0.0631813 ) 
+   momentum = (-0.257607,0.044974,0.0133759) mag= 0.261845
+   position = (50668.9,3.32283e+07,-3.48029e+08) is in volume 'AtmosphereLayer151',  its material is 'AirLayer151' with density = 1.7402e-12 g/cm^3 
+ Total number of Steps by this track: 3780
+ Length of this step = 179319 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 79142756 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.0919378 MeV energy  ( pre-Step = 0.0919378 ) 
+   momentum = (-0.308663,0.0825075,0.0182363) mag= 0.32002
+   position = (-724359,3.8752e+07,-3.74097e+08) is in volume 'AtmosphereLayer125',  its material is 'AirLayer125' with density = 1.05446e-11 g/cm^3 
+ Total number of Steps by this track: 2872
+ Length of this step = 197046 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 92232131 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.736856 MeV energy  ( pre-Step = 0.736856 ) 
+   momentum = (-1.12457,0.17549,0.0237288) mag= 1.13843
+   position = (81944.1,4.06263e+07,-3.80694e+08) is in volume 'AtmosphereLayer119',  its material is 'AirLayer119' with density = 1.90588e-11 g/cm^3 
+ Total number of Steps by this track: 2642
+ Length of this step = 371101 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 85357611 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.232684 MeV energy  ( pre-Step = 0.232684 ) 
+   momentum = (-0.24475,0.467977,0.114189) mag= 0.540318
+   position = (343971,4.18969e+07,-3.85396e+08) is in volume 'AtmosphereLayer114',  its material is 'AirLayer114' with density = 3.49707e-11 g/cm^3 
+ Total number of Steps by this track: 2668
+ Length of this step = 255387 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 101524457 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.0017061 MeV energy  ( pre-Step = 0.0017061 ) 
+   momentum = (0.0416874,-0.00285699,0.000736703) mag= 0.0417917
+   position = (115624,3.27527e+07,-3.45963e+08) is in volume 'AtmosphereLayer154',  its material is 'AirLayer154' with density = 1.4733e-12 g/cm^3 
+ Total number of Steps by this track: 819
+ Length of this step = 71689.4 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 90849810 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > Writing results to histogram...complete!
+G4WT0 > Writing results to histogram...complete!
+Writing results to histogram...complete!
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+"New run: PA 45 deg"
+G4WT0 > "New run: PA 45 deg"
+G4WT1 > "New run: PA 45 deg"
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.742086 MeV energy  ( pre-Step = 0.742086 ) 
+   momentum = (1.02851,0.486951,0.118983) mag= 1.14416
+   position = (28914,4.25084e+07,-3.89465e+08) is in volume 'AtmosphereLayer110',  its material is 'AirLayer110' with density = 6.07204e-11 g/cm^3 
+ Total number of Steps by this track: 3762
+ Length of this step = 371266 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 92064024 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.580711 MeV energy  ( pre-Step = 0.580711 ) 
+   momentum = (-0.669995,-0.676012,-0.157562) mag= 0.964733
+   position = (154689,3.98824e+07,-3.77328e+08) is in volume 'AtmosphereLayer122',  its material is 'AirLayer122' with density = 1.3902e-11 g/cm^3 
+ Total number of Steps by this track: 3756
+ Length of this step = 341871 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 106684341 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00559576 MeV energy  ( pre-Step = 0.00559576 ) 
+   momentum = (0.0652551,0.0377894,0.00799436) mag= 0.0758299
+   position = (-189907,3.03012e+07,-3.34945e+08) is in volume 'AtmosphereLayer165',  its material is 'AirLayer165' with density = 8.34652e-13 g/cm^3 
+ Total number of Steps by this track: 1749
+ Length of this step = 96787.6 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 109801414 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.106733 MeV energy  ( pre-Step = 0.106733 ) 
+   momentum = (-0.275069,-0.206376,-0.0471064) mag= 0.347092
+   position = (-232322,3.68944e+07,-3.63543e+08) is in volume 'AtmosphereLayer136',  its material is 'AirLayer136' with density = 4.45322e-12 g/cm^3 
+ Total number of Steps by this track: 4333
+ Length of this step = 205712 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 99627693 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00122933 MeV energy  ( pre-Step = 0.00122933 ) 
+   momentum = (0.0353825,-0.00066058,0.00235041) mag= 0.0354667
+   position = (-36446.3,-2.80835e+06,-1.87193e+08) is in volume 'AtmosphereLayer312',  its material is 'AirLayer312' with density = 4.75586e-15 g/cm^3 
+ Total number of Steps by this track: 11375
+ Length of this step = 68530.4 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 111877000 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.42989 MeV energy  ( pre-Step = 0.42989 ) 
+   momentum = (0.789992,-0.00472658,-0.00652219) mag= 0.790033
+   position = (-50721.5,4.08144e+07,-3.81485e+08) is in volume 'AtmosphereLayer118',  its material is 'AirLayer118' with density = 2.13516e-11 g/cm^3 
+ Total number of Steps by this track: 3577
+ Length of this step = 309075 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 113778823 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.142074 MeV energy  ( pre-Step = 0.142074 ) 
+   momentum = (0.00583914,0.398947,0.078692) mag= 0.406675
+   position = (175225,4.19465e+07,-3.86299e+08) is in volume 'AtmosphereLayer113',  its material is 'AirLayer113' with density = 3.99305e-11 g/cm^3 
+ Total number of Steps by this track: 3063
+ Length of this step = 221542 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 104050004 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > Writing results to histogram...complete!
+G4WT0 > Writing results to histogram...complete!
+Writing results to histogram...complete!
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+"New run: PA 50 deg"
+G4WT0 > "New run: PA 50 deg"
+G4WT1 > "New run: PA 50 deg"
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00290819 MeV energy  ( pre-Step = 0.00290819 ) 
+   momentum = (-0.0157432,0.0505783,0.013214) mag= 0.0545951
+   position = (76225.1,8.09416e+06,-2.36385e+08) is in volume 'AtmosphereLayer263',  its material is 'AirLayer263' with density = 1.98226e-14 g/cm^3 
+ Total number of Steps by this track: 7305
+ Length of this step = 84011.5 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 129732975 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.932199 MeV energy  ( pre-Step = 0.932199 ) 
+   momentum = (-1.23933,0.514881,0.143773) mag= 1.3497
+   position = (-70657.6,4.47506e+07,-3.99723e+08) is in volume 'AtmosphereLayer100',  its material is 'AirLayer100' with density = 3.42578e-10 g/cm^3 
+ Total number of Steps by this track: 2105
+ Length of this step = 402319 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 130565543 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > Writing results to histogram...complete!
+G4WT1 > Writing results to histogram...complete!
+Writing results to histogram...complete!
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+"New run: PA 55 deg"
+G4WT0 > "New run: PA 55 deg"
+G4WT1 > "New run: PA 55 deg"
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00350454 MeV energy  ( pre-Step = 0.00350454 ) 
+   momentum = (-0.0443721,-0.0395123,-0.00798824) mag= 0.0599493
+   position = (72873.9,5.26901e+06,-2.24122e+08) is in volume 'AtmosphereLayer275',  its material is 'AirLayer275' with density = 1.36953e-14 g/cm^3 
+ Total number of Steps by this track: 15002
+ Length of this step = 88259.9 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 121957245 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.0277308 MeV energy  ( pre-Step = 0.0277308 ) 
+   momentum = (0.0216582,-0.165938,-0.0332471) mag= 0.170616
+   position = (3796.31,3.9578e+07,-3.76426e+08) is in volume 'AtmosphereLayer123',  its material is 'AirLayer123' with density = 1.26261e-11 g/cm^3 
+ Total number of Steps by this track: 1506
+ Length of this step = 143819 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 122528373 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.368795 MeV energy  ( pre-Step = 0.368795 ) 
+   momentum = (-0.310134,0.628313,0.14818) mag= 0.716183
+   position = (-198388,4.42863e+07,-3.95439e+08) is in volume 'AtmosphereLayer104',  its material is 'AirLayer104' with density = 1.57803e-10 g/cm^3 
+ Total number of Steps by this track: 3730
+ Length of this step = 293331 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 125989269 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.248306 MeV energy  ( pre-Step = 0.248306 ) 
+   momentum = (0.500652,-0.249374,-0.0508422) mag= 0.561627
+   position = (88815.4,3.77851e+07,-3.68335e+08) is in volume 'AtmosphereLayer131',  its material is 'AirLayer131' with density = 6.43335e-12 g/cm^3 
+ Total number of Steps by this track: 4950
+ Length of this step = 261390 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 142119551 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.417901 MeV energy  ( pre-Step = 0.417901 ) 
+   momentum = (-0.706784,0.309644,0.0794557) mag= 0.775716
+   position = (52125.8,4.01623e+07,-3.79295e+08) is in volume 'AtmosphereLayer120',  its material is 'AirLayer120' with density = 1.70825e-11 g/cm^3 
+ Total number of Steps by this track: 4562
+ Length of this step = 306427 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 149200675 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > Writing results to histogram...complete!
+G4WT1 > Writing results to histogram...complete!
+Writing results to histogram...complete!
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+"New run: PA 60 deg"
+G4WT0 > "New run: PA 60 deg"
+G4WT1 > "New run: PA 60 deg"
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.840317 MeV energy  ( pre-Step = 0.840317 ) 
+   momentum = (-0.852592,0.88658,0.228029) mag= 1.25097
+   position = (30239.1,4.49671e+07,-4.00417e+08) is in volume 'AtmosphereLayer99',  its material is 'AirLayer99' with density = 4.25572e-10 g/cm^3 
+ Total number of Steps by this track: 3675
+ Length of this step = 387270 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 142434953 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.745794 MeV energy  ( pre-Step = 0.745794 ) 
+   momentum = (0.146416,-1.10527,-0.274483) mag= 1.14822
+   position = (47227.4,4.33123e+07,-3.93678e+08) is in volume 'AtmosphereLayer106',  its material is 'AirLayer106' with density = 1.1223e-10 g/cm^3 
+ Total number of Steps by this track: 2918
+ Length of this step = 371601 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 166266062 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.828286 MeV energy  ( pre-Step = 0.828286 ) 
+   momentum = (-0.304454,1.17825,0.227154) mag= 1.23797
+   position = (-49809.3,4.31542e+07,-3.92578e+08) is in volume 'AtmosphereLayer107',  its material is 'AirLayer107' with density = 9.55397e-11 g/cm^3 
+ Total number of Steps by this track: 2977
+ Length of this step = 385989 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 166566415 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.479885 MeV energy  ( pre-Step = 0.479885 ) 
+   momentum = (0.112259,-0.820629,-0.186269) mag= 0.848958
+   position = (94799.4,4.11914e+07,-3.8355e+08) is in volume 'AtmosphereLayer116',  its material is 'AirLayer116' with density = 2.71188e-11 g/cm^3 
+ Total number of Steps by this track: 6849
+ Length of this step = 320239 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 167794704 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.350803 MeV energy  ( pre-Step = 0.350803 ) 
+   momentum = (0.0508439,-0.676484,-0.146172) mag= 0.693961
+   position = (99127.9,4.35417e+07,-3.93579e+08) is in volume 'AtmosphereLayer106',  its material is 'AirLayer106' with density = 1.1223e-10 g/cm^3 
+ Total number of Steps by this track: 955
+ Length of this step = 288867 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 167921017 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.106937 MeV energy  ( pre-Step = 0.106937 ) 
+   momentum = (-0.270508,0.211867,0.051597) mag= 0.347454
+   position = (353326,4.28913e+07,-3.92425e+08) is in volume 'AtmosphereLayer107',  its material is 'AirLayer107' with density = 9.55397e-11 g/cm^3 
+ Total number of Steps by this track: 3012
+ Length of this step = 204457 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 169000791 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.0181565 MeV energy  ( pre-Step = 0.0181565 ) 
+   momentum = (-0.110984,0.077093,0.0249961) mag= 0.137425
+   position = (-111496,3.87503e+07,-3.73162e+08) is in volume 'AtmosphereLayer126',  its material is 'AirLayer126' with density = 9.66567e-12 g/cm^3 
+ Total number of Steps by this track: 1062
+ Length of this step = 129249 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 147200504 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.996317 MeV energy  ( pre-Step = 0.996317 ) 
+   momentum = (-0.65393,1.23049,0.262982) mag= 1.41806
+   position = (-77916.6,4.4288e+07,-3.97398e+08) is in volume 'AtmosphereLayer102',  its material is 'AirLayer102' with density = 2.28501e-10 g/cm^3 
+ Total number of Steps by this track: 2004
+ Length of this step = 412569 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 147945225 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.455519 MeV energy  ( pre-Step = 0.455519 ) 
+   momentum = (0.820309,-0.0112555,0.00225136) mag= 0.820389
+   position = (26565.3,4.1509e+07,-3.85468e+08) is in volume 'AtmosphereLayer114',  its material is 'AirLayer114' with density = 3.49707e-11 g/cm^3 
+ Total number of Steps by this track: 4619
+ Length of this step = 314666 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 148700904 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00293039 MeV energy  ( pre-Step = 0.00293039 ) 
+   momentum = (-0.053641,0.00390105,-0.0105294) mag= 0.0548036
+   position = (65690.7,3.46107e+07,-3.55713e+08) is in volume 'AtmosphereLayer144',  its material is 'AirLayer144' with density = 2.63065e-12 g/cm^3 
+ Total number of Steps by this track: 763
+ Length of this step = 82755.8 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 148701667 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.649111 MeV energy  ( pre-Step = 0.649111 ) 
+   momentum = (1.02908,0.157133,0.0323159) mag= 1.04151
+   position = (-129020,4.37652e+07,-3.93965e+08) is in volume 'AtmosphereLayer106',  its material is 'AirLayer106' with density = 1.1223e-10 g/cm^3 
+ Total number of Steps by this track: 2396258
+ Length of this step = 353846 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 179816273 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.606397 MeV energy  ( pre-Step = 0.606397 ) 
+   momentum = (-0.677858,0.711012,0.149749) mag= 0.993707
+   position = (-20897.8,4.06242e+07,-3.81248e+08) is in volume 'AtmosphereLayer118',  its material is 'AirLayer118' with density = 2.13516e-11 g/cm^3 
+ Total number of Steps by this track: 3617
+ Length of this step = 346659 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 149030470 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.0202209 MeV energy  ( pre-Step = 0.0202209 ) 
+   momentum = (0.105562,-0.0973102,-0.0214923) mag= 0.145171
+   position = (22216.3,2.79475e+07,-3.24692e+08) is in volume 'AtmosphereLayer175',  its material is 'AirLayer175' with density = 5.20592e-13 g/cm^3 
+ Total number of Steps by this track: 4445
+ Length of this step = 134232 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 180132940 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.996938 MeV energy  ( pre-Step = 0.996938 ) 
+   momentum = (-1.35261,0.421956,0.0717032) mag= 1.41872
+   position = (-25240.6,4.40182e+07,-3.96295e+08) is in volume 'AtmosphereLayer103',  its material is 'AirLayer103' with density = 1.89131e-10 g/cm^3 
+ Total number of Steps by this track: 2055
+ Length of this step = 412788 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 183240946 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00323198 MeV energy  ( pre-Step = 0.00323198 ) 
+   momentum = (-0.0166982,0.0533509,0.013725) mag= 0.0575632
+   position = (27298.7,3.59355e+07,-3.6017e+08) is in volume 'AtmosphereLayer139',  its material is 'AirLayer139' with density = 3.62655e-12 g/cm^3 
+ Total number of Steps by this track: 1241
+ Length of this step = 83857.4 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 184154476 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.398834 MeV energy  ( pre-Step = 0.398834 ) 
+   momentum = (-0.0558175,0.731588,0.168341) mag= 0.752779
+   position = (-71066.2,4.1423e+07,-3.85282e+08) is in volume 'AtmosphereLayer114',  its material is 'AirLayer114' with density = 3.49707e-11 g/cm^3 
+ Total number of Steps by this track: 4491
+ Length of this step = 301434 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 153358003 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.997082 MeV energy  ( pre-Step = 0.997082 ) 
+   momentum = (-1.17455,0.780865,0.154515) mag= 1.41887
+   position = (-40799.3,4.37381e+07,-3.95148e+08) is in volume 'AtmosphereLayer104',  its material is 'AirLayer104' with density = 1.57803e-10 g/cm^3 
+ Total number of Steps by this track: 2046
+ Length of this step = 412915 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 185071984 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.998137 MeV energy  ( pre-Step = 0.998137 ) 
+   momentum = (-0.269001,-1.35851,-0.313802) mag= 1.41999
+   position = (90773.3,4.31095e+07,-3.91915e+08) is in volume 'AtmosphereLayer108',  its material is 'AirLayer108' with density = 8.1771e-11 g/cm^3 
+ Total number of Steps by this track: 2123
+ Length of this step = 413367 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 185748359 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > Writing results to histogram...complete!
+G4WT0 > Writing results to histogram...complete!
+Writing results to histogram...complete!
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+"New run: PA 65 deg"
+G4WT1 > "New run: PA 65 deg"
+G4WT0 > "New run: PA 65 deg"
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00349561 MeV energy  ( pre-Step = 0.00349561 ) 
+   momentum = (0.0570385,-0.0181313,-0.00160772) mag= 0.0598725
+   position = (18225,2.87877e+07,-3.28472e+08) is in volume 'AtmosphereLayer171',  its material is 'AirLayer171' with density = 6.26115e-13 g/cm^3 
+ Total number of Steps by this track: 2462
+ Length of this step = 86164.9 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 199428624 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00634384 MeV energy  ( pre-Step = 0.00634384 ) 
+   momentum = (0.00573667,-0.0782414,-0.0192096) mag= 0.0807691
+   position = (45598.4,3.30617e+07,-3.47771e+08) is in volume 'AtmosphereLayer152',  its material is 'AirLayer152' with density = 1.64521e-12 g/cm^3 
+ Total number of Steps by this track: 1665
+ Length of this step = 99604.3 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 161199254 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.386016 MeV energy  ( pre-Step = 0.386016 ) 
+   momentum = (0.728947,0.108832,0.0175377) mag= 0.737235
+   position = (-85039.2,4.14428e+07,-3.84658e+08) is in volume 'AtmosphereLayer115',  its material is 'AirLayer115' with density = 3.07385e-11 g/cm^3 
+ Total number of Steps by this track: 4181
+ Length of this step = 298353 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 203140169 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.731182 MeV energy  ( pre-Step = 0.731182 ) 
+   momentum = (1.04665,-0.421963,-0.0913999) mag= 1.13221
+   position = (144551,3.62829e+07,-3.61331e+08) is in volume 'AtmosphereLayer138',  its material is 'AirLayer138' with density = 3.87901e-12 g/cm^3 
+ Total number of Steps by this track: 7071
+ Length of this step = 371724 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 163948801 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.255606 MeV energy  ( pre-Step = 0.255606 ) 
+   momentum = (0.169442,0.53329,0.11599) mag= 0.571457
+   position = (-229427,3.90678e+07,-3.74694e+08) is in volume 'AtmosphereLayer125',  its material is 'AirLayer125' with density = 1.05446e-11 g/cm^3 
+ Total number of Steps by this track: 5767
+ Length of this step = 263279 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 203386139 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.898434 MeV energy  ( pre-Step = 0.898434 ) 
+   momentum = (1.31261,-0.0494108,0.000180127) mag= 1.31354
+   position = (-4981.91,3.68538e+07,-3.64023e+08) is in volume 'AtmosphereLayer135',  its material is 'AirLayer135' with density = 4.78022e-12 g/cm^3 
+ Total number of Steps by this track: 5881
+ Length of this step = 400143 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 203859378 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.694506 MeV energy  ( pre-Step = 0.694506 ) 
+   momentum = (-0.915584,0.579642,0.133579) mag= 1.09184
+   position = (59717.5,3.90257e+07,-3.74088e+08) is in volume 'AtmosphereLayer125',  its material is 'AirLayer125' with density = 1.05446e-11 g/cm^3 
+ Total number of Steps by this track: 4849
+ Length of this step = 363967 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 211290099 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00475779 MeV energy  ( pre-Step = 0.00475779 ) 
+   momentum = (0.0194474,-0.0649187,-0.0171012) mag= 0.0698934
+   position = (-27353.1,3.48044e+07,-3.54766e+08) is in volume 'AtmosphereLayer145',  its material is 'AirLayer145' with density = 2.47395e-12 g/cm^3 
+ Total number of Steps by this track: 475
+ Length of this step = 92526.4 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 211866183 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.690043 MeV energy  ( pre-Step = 0.690043 ) 
+   momentum = (-0.500795,-0.942238,-0.206816) mag= 1.08691
+   position = (63679.5,4.17598e+07,-3.86191e+08) is in volume 'AtmosphereLayer113',  its material is 'AirLayer113' with density = 3.99305e-11 g/cm^3 
+ Total number of Steps by this track: 4653
+ Length of this step = 362131 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 212496065 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.508949 MeV energy  ( pre-Step = 0.508949 ) 
+   momentum = (0.739431,-0.469748,-0.108406) mag= 0.882708
+   position = (-219731,3.98549e+07,-3.77694e+08) is in volume 'AtmosphereLayer122',  its material is 'AirLayer122' with density = 1.3902e-11 g/cm^3 
+ Total number of Steps by this track: 4699
+ Length of this step = 326984 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 167550532 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.0092248 MeV energy  ( pre-Step = 0.0092248 ) 
+   momentum = (0.0809563,-0.0513757,-0.0178731) mag= 0.0975337
+   position = (-23711.6,3.91368e+07,-3.74882e+08) is in volume 'AtmosphereLayer125',  its material is 'AirLayer125' with density = 1.05446e-11 g/cm^3 
+ Total number of Steps by this track: 1282
+ Length of this step = 108871 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 214813891 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.811868 MeV energy  ( pre-Step = 0.811868 ) 
+   momentum = (-0.663355,1.00099,0.2164) mag= 1.22019
+   position = (-80015.8,3.96997e+07,-3.77581e+08) is in volume 'AtmosphereLayer122',  its material is 'AirLayer122' with density = 1.3902e-11 g/cm^3 
+ Total number of Steps by this track: 4542
+ Length of this step = 384458 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 169062476 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.131646 MeV energy  ( pre-Step = 0.131646 ) 
+   momentum = (-0.247132,-0.29523,-0.0603081) mag= 0.389708
+   position = (-166652,4.17562e+07,-3.85471e+08) is in volume 'AtmosphereLayer114',  its material is 'AirLayer114' with density = 3.49707e-11 g/cm^3 
+ Total number of Steps by this track: 4274
+ Length of this step = 216887 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 217918381 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.0718609 MeV energy  ( pre-Step = 0.0718609 ) 
+   momentum = (-0.12367,-0.248637,-0.0386147) mag= 0.280367
+   position = (-118119,4.27301e+07,-3.903e+08) is in volume 'AtmosphereLayer109',  its material is 'AirLayer109' with density = 7.03196e-11 g/cm^3 
+ Total number of Steps by this track: 816
+ Length of this step = 183913 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 218093270 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.757867 MeV energy  ( pre-Step = 0.757867 ) 
+   momentum = (0.855085,0.768706,0.163773) mag= 1.16142
+   position = (-149375,4.23527e+07,-3.87874e+08) is in volume 'AtmosphereLayer112',  its material is 'AirLayer112' with density = 4.5757e-11 g/cm^3 
+ Total number of Steps by this track: 4347
+ Length of this step = 374193 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 172536248 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.905946 MeV energy  ( pre-Step = 0.905946 ) 
+   momentum = (-1.28424,0.302438,0.0766265) mag= 1.32159
+   position = (10126.9,3.79057e+07,-3.6928e+08) is in volume 'AtmosphereLayer130',  its material is 'AirLayer130' with density = 6.95508e-12 g/cm^3 
+ Total number of Steps by this track: 5358
+ Length of this step = 400883 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 218538077 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.43328 MeV energy  ( pre-Step = 0.43328 ) 
+   momentum = (-0.79259,-0.0161647,0.0456344) mag= 0.794067
+   position = (-1650.28,4.31038e+07,-3.91268e+08) is in volume 'AtmosphereLayer108',  its material is 'AirLayer108' with density = 8.1771e-11 g/cm^3 
+ Total number of Steps by this track: 3497
+ Length of this step = 309446 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 173216280 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00107357 MeV energy  ( pre-Step = 0.00107357 ) 
+   momentum = (0.00459636,-0.0313903,-0.00958447) mag= 0.0331412
+   position = (-118625,3.12049e+07,-3.39466e+08) is in volume 'AtmosphereLayer160',  its material is 'AirLayer160' with density = 1.07269e-12 g/cm^3 
+ Total number of Steps by this track: 1594
+ Length of this step = 64007.4 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 221308280 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.764898 MeV energy  ( pre-Step = 0.764898 ) 
+   momentum = (1.13282,0.277042,0.0821652) mag= 1.1691
+   position = (-12277,3.94882e+07,-3.76017e+08) is in volume 'AtmosphereLayer123',  its material is 'AirLayer123' with density = 1.26261e-11 g/cm^3 
+ Total number of Steps by this track: 4584
+ Length of this step = 376479 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 222153612 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00263083 MeV energy  ( pre-Step = 0.00263083 ) 
+   momentum = (0.0438806,-0.0275356,-0.00345085) mag= 0.0519194
+   position = (-90516.4,3.52514e+07,-3.56804e+08) is in volume 'AtmosphereLayer143',  its material is 'AirLayer143' with density = 2.79973e-12 g/cm^3 
+ Total number of Steps by this track: 2470
+ Length of this step = 79738.4 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 175984080 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.676843 MeV energy  ( pre-Step = 0.676843 ) 
+   momentum = (0.952256,0.484616,0.0905677) mag= 1.07231
+   position = (-19662.7,4.28502e+07,-3.90441e+08) is in volume 'AtmosphereLayer109',  its material is 'AirLayer109' with density = 7.03196e-11 g/cm^3 
+ Total number of Steps by this track: 3654
+ Length of this step = 359358 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 224368000 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00354793 MeV energy  ( pre-Step = 0.00354793 ) 
+   momentum = (-0.0602497,-0.00268396,0.00115682) mag= 0.0603205
+   position = (-2326.99,3.48361e+07,-3.55238e+08) is in volume 'AtmosphereLayer144',  its material is 'AirLayer144' with density = 2.63065e-12 g/cm^3 
+ Total number of Steps by this track: 1808
+ Length of this step = 85939 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 225380989 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.817901 MeV energy  ( pre-Step = 0.817901 ) 
+   momentum = (1.03819,-0.634453,-0.156506) mag= 1.22673
+   position = (68066.2,4.23586e+07,-3.88636e+08) is in volume 'AtmosphereLayer111',  its material is 'AirLayer111' with density = 5.26186e-11 g/cm^3 
+ Total number of Steps by this track: 3772
+ Length of this step = 384507 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 178578275 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.00132006 MeV energy  ( pre-Step = 0.00132006 ) 
+   momentum = (0.00666324,0.0350533,0.00881519) mag= 0.0367538
+   position = (-142466,3.04649e+07,-3.37308e+08) is in volume 'AtmosphereLayer162',  its material is 'AirLayer162' with density = 9.68926e-13 g/cm^3 
+ Total number of Steps by this track: 12179
+ Length of this step = 67356.3 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 225628333 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.196237 MeV energy  ( pre-Step = 0.196237 ) 
+   momentum = (-0.480523,0.0893876,-0.0130287) mag= 0.48894
+   position = (14604.4,4.53791e+07,-4.01616e+08) is in volume 'AtmosphereLayer98',  its material is 'AirLayer98' with density = 5.33392e-10 g/cm^3 
+ Total number of Steps by this track: 3196
+ Length of this step = 242280 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 179336640 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : Transport-001-ExcessSteps
+      issued by : G4Transportation::AlongStepDoIt
+ Transportation is killing track that is looping or stuck. 
+   Track is e- and has 0.912827 MeV energy  ( pre-Step = 0.912827 ) 
+   momentum = (1.32714,0.0686215,0.0124333) mag= 1.32897
+   position = (-12906.9,3.86221e+07,-3.71186e+08) is in volume 'AtmosphereLayer128',  its material is 'AirLayer128' with density = 8.16954e-12 g/cm^3 
+ Total number of Steps by this track: 5073
+ Length of this step = 401815 mm 
+ Number of propagation trials = 300 ( vs maximum = 300 for 'important' particles ) 
+   ( Number of *calls* of Transport/AlongStepDoIt = 181833871 )
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > Writing results to histogram...complete!
+G4WT1 > Writing results to histogram...complete!
+Writing results to histogram...complete!
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+"New run: PA 70 deg"
+Graphics systems deleted.
+Visualization Manager deleting...
+G4WT1 > "New run: PA 70 deg"
+G4WT0 > "New run: PA 70 deg"
+Simulation completed in : 58539.8 seconds
