@@ -166,7 +166,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   
 
   // Layers are the size needed to fill the 1000 km column
-  G4double layerThickness = ( int(1000 / tableSize) )*km-1.*um;
+  G4double layerThickness = ( int(1000 / tableSize) ) * km - 100. * m;
   G4double layerLocation;
   
   G4Tubs* atmosphereLayer = new G4Tubs("AtmosphereLayer",
