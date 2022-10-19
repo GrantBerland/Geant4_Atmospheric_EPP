@@ -165,14 +165,17 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 			       1.0078*g/mole);
   
 
+
+  std::cout << "Table size: " << tableSize << std::endl;
+
   // Layers are the size needed to fill the 1000 km column
-  G4double layerThickness = ( int(1000 / tableSize) ) * km - 100. * m;
+  G4double layerThickness = ( int(1000 / tableSize) ) * km - 0. * m;
   G4double layerLocation;
   
   G4Tubs* atmosphereLayer = new G4Tubs("AtmosphereLayer",
 		       	       		0.,
 		  			world_sizeXY-1.*mm,
-		       	       		0.5*layerThickness-1.*mm,
+		       	       		0.5*layerThickness,
 					0.,
 					360.*deg);
   G4Material*      layerMaterial;
