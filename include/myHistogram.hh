@@ -43,17 +43,21 @@ public:
   // Always base 10
   void GenerateLogspaceBins(double, double, int, double[]);
 
+  void ClearHistogram();
+
 private:
   // Need to run InitializeHistogram() method to write particle energy 
   // depostion to histogram
   int initializedFlag = 0;   
   
-  // Array initialized to zeros (with fixed resolution)
-  double histogramArray[1000] = {};
 
   double binEdges[101] = {};
 
+  // Array initialized to zeros (with fixed resolution)
+  double histogramArray[1000] = {};
+
   double twoDhistogramArray[1000][100] = {};
+
 };
 
 // Inline constructor and destructor methods
@@ -183,6 +187,12 @@ inline void myHistogram::GenerateLogspaceBins(G4double start,
   // fix last entry to 10^b 
   binArray[nBins-1] = std::pow(10., end);
 
+}
+
+inline void myHistogram::ClearHistogram()
+{
+  std::memset(histogramArray,     0, sizeof(histogramArray));  
+  std::memset(twoDhistogramArray, 0, sizeof(twoDhistogramArray));  
 }
 
 #endif

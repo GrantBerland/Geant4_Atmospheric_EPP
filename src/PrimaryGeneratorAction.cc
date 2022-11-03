@@ -51,7 +51,7 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
   fPrimaryMessenger(0),
   fEnergyDistType(0),
   fPitchAngleDistType(0),
-  fE0(100.),
+  fE0(0),
   fMaxPitchAngle(40.),
   fInitialParticleAlt(500.),
   fPI(3.14159265359),
@@ -217,6 +217,8 @@ void PrimaryGeneratorAction::GenerateElectrons(ParticleSample* r)
     default:
      throw std::invalid_argument("Need to enter an energy distribution!");
   }  
+
+
 }
 
 void PrimaryGeneratorAction::GenerateSolarSpectra(ParticleSample* r)

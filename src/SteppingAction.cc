@@ -261,13 +261,15 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 	throw std::runtime_error("New particle alert!! Particle: " + particleName);
       }
 
+
+
+
       if(flag > 0)
       {
 
         // Adds energy deposition to vector owned by RunAction, which is
         // written to a results file per simulation run
     	
-
 	// Gets energy delta of particle over step length
     	G4double energyBefore = step->GetPreStepPoint()->GetKineticEnergy(); 
     	G4double energyAfter  = step->GetPostStepPoint()->GetKineticEnergy();

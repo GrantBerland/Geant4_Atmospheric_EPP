@@ -32,7 +32,7 @@ PrimaryGeneratorMessenger::PrimaryGeneratorMessenger(PrimaryGeneratorAction* pri
   
   fDcmd = new G4UIcmdWithADouble("/energy/setFoldingEnergy",this);
   fDcmd->SetParameterName("Folding or Mono Energy [keV]",true);
-  fDcmd->SetDefaultValue(100.);
+  fDcmd->SetDefaultValue(0);
   fDcmd->AvailableForStates(G4State_PreInit, G4State_Idle);
   
   fDcmd2 = new G4UIcmdWithADouble("/energy/setMaximumPitchAngle",this);

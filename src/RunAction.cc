@@ -124,12 +124,18 @@ void RunAction::ChangeLooperParameters(const G4ParticleDefinition* particleDef )
 void RunAction::EndOfRunAction(const G4Run*)
 {
 
-  G4cout << "Writing results to histogram...";
+  //G4cout << "Writing results to histogram...";
   fEnergyHist_1->WriteHistogramToFile("electron_dep_" + fHistogramFileName);
   fEnergyHist2D_1->Write2DHistogram("electron_ene_"   + fHistogramFileName);
   fEnergyHist_2->WriteHistogramToFile("photon_dep_"   + fHistogramFileName);   
   fEnergyHist2D_2->Write2DHistogram("photon_ene_"     + fHistogramFileName);   
-  G4cout << "complete!" << G4endl;
+  //G4cout << "complete!" << G4endl;
+
+
+  fEnergyHist_1->ClearHistogram();
+  fEnergyHist2D_1->ClearHistogram();
+  fEnergyHist_2->ClearHistogram();
+  fEnergyHist2D_2->ClearHistogram();
 
 }
 
