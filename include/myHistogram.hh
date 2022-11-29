@@ -12,6 +12,13 @@
 // per altitude bin
 
 
+#define E_BIN_RES 100
+#define N_BIN_EDGES E_BIN_RES + 1
+
+#define ALT_BIN_RES 1000
+#define N_ALT_BIN_EDGES ALT_BIN_RES + 1
+
+
 class myHistogram
 {
 public:
@@ -51,12 +58,12 @@ private:
   int initializedFlag = 0;   
   
 
-  double binEdges[101] = {};
+  double binEdges[N_BIN_EDGES] = {};
 
   // Array initialized to zeros (with fixed resolution)
-  double histogramArray[1000] = {};
+  double histogramArray[ALT_BIN_RES] = {};
 
-  double twoDhistogramArray[1000][100] = {};
+  double twoDhistogramArray[ALT_BIN_RES][E_BIN_RES] = {};
 
 };
 
@@ -93,7 +100,7 @@ inline void myHistogram::WriteHistogramToFile(std::string filename)
     // OPEN
     outputFile.open(filename, std::ios_base::app);
 
-    for(unsigned int i=0; i<1000; i++)
+    for(unsigned int i = 0; i < ALT_BIN_RES; i++)
     {
       outputFile << histogramArray[i] << "\n";
     }
@@ -120,7 +127,7 @@ inline void myHistogram::WriteDirectlyToFile(std::string filename,
   outputFile.open(filename, std::ios_base::app);
 
   // Writes entire line in 'data[]' to file, comma delimited
-  for(unsigned int i=0; i<arraySize-1; i++)
+  for(unsigned int i=0; i < arraySize-1; i++)
   {
     outputFile << data[i] << ',';
   }
@@ -137,7 +144,7 @@ inline void myHistogram::WriteDirectlyToFile(std::string filename,
 inline void myHistogram::AddCountTo2DHistogram(unsigned int address1, double value)
 {
 
-  for(unsigned int i=0; i<101; i++)
+  for(unsigned int i = 0; i < N_BIN_EDGES; i++)
   {   
     if(binEdges[i] > value)
     { 
@@ -157,11 +164,11 @@ inline void myHistogram::Write2DHistogram(std::string filename)
 
     for(unsigned int i=0; i<1000; i++)
     {
-	for (unsigned int j=0; j<100-1; j++)
+	for (unsigned int j=0; j < E_BIN_RES - 1; j++)
 	{
 	    outputFile << twoDhistogramArray[i][j] << ",";
 	}
-	outputFile << twoDhistogramArray[i][100-1] << "\n";
+	outputFile << twoDhistogramArray[i][E_BIN_RES-1] << "\n";
     }
   
     // CLOSE

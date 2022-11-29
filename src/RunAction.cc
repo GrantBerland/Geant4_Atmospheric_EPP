@@ -50,6 +50,12 @@
 
 #include <fstream>
 
+#include "G4AutoLock.hh"
+
+// Initialize autolock for multiple threads writing into a single file
+namespace{ G4Mutex aMutex=G4MUTEX_INITIALIZER; } 
+
+
 RunAction::RunAction()
 : G4UserRunAction(),
   fRunActionMessenger(),
@@ -124,6 +130,8 @@ void RunAction::ChangeLooperParameters(const G4ParticleDefinition* particleDef )
 void RunAction::EndOfRunAction(const G4Run*)
 {
 
+  G4AutoLock lock(&aMutex);
+  
   //G4cout << "Writing results to histogram...";
   fEnergyHist_1->WriteHistogramToFile("electron_dep_" + fHistogramFileName);
   fEnergyHist2D_1->Write2DHistogram("electron_ene_"   + fHistogramFileName);
