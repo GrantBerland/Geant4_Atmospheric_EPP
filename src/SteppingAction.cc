@@ -289,20 +289,46 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 	  
 	
 	// Check for valid altitude address
-	if(altitudeAddress >= 0 && altitudeAddress < 500 && track->GetNextVolume() != nullptr) 
+	if(altitudeAddress >= 0 && altitudeAddress < 500) 
 	{
 	  // Arguments:
 	  // altitude, energy lost, current energy before loss calculation, particle type
 	  LogEnergyToSpecificHistogram(altitudeAddress, energyDep, energyBefore, flag);
 	}
-	else // escape outside simulation 
+        else if(altitudeAddress >= 500) 
+            // escape outside simulation, top boundary 
 	{
 	  // Arguments:
 	  // altitude, current energy, current energy, particle type
 	  LogEnergyToSpecificHistogram(500, energyAfter, energyAfter, flag);
+
+          // Log pitch angle of backscattered electrons with energy
+          if(flag == 1) 
+          {
+	      const G4ThreeVector mom = track->GetMomentumDirection();
+              
+              LogPitchAngle(energyAfter, mom.x(), mom.y(), mom.z());
+
+          }
 	  track->SetTrackStatus(fStopAndKill);
 	}
-
+        else if(altitudeAddress <= 0)
+            // escape outside simulation, bottom boundary 
+        {  
+          // Arguments:
+	  // altitude, current energy, current energy, particle type
+	  LogEnergyToSpecificHistogram(0, energyAfter, energyAfter, flag);
+	  track->SetTrackStatus(fStopAndKill);
+	}
+        //track->GetNextVolume() == nullptr
+        else
+            // escape outside simulation, side boundary 
+        {
+          // Arguments:
+	  // altitude, current energy, current energy, particle type
+	  LogEnergyToSpecificHistogram(altitudeAddress, energyAfter, energyAfter, flag);
+	  track->SetTrackStatus(fStopAndKill);
+	}
       }
 
       break;
@@ -350,6 +376,23 @@ void SteppingAction::LogEnergyToSpecificHistogram(G4int histogramAddress, G4doub
       throw std::runtime_error("Enter a valid histogram selection!");
       break;
   }
+
+}
+void SteppingAction::LogPitchAngle(G4double energyAfter, G4double px, G4double py, G4double pz)
+{
+
+  G4AutoLock lock(&aMutex);
+
+  std::ofstream backscatter_file;
+  
+  backscatter_file.open("bs.csv", std::ios_base::app);
+
+  // Encode energy into momentum direction to save some write time
+  backscatter_file << px * energyAfter/keV << ','    
+                   << py * energyAfter/keV << ',' 
+                   << pz * energyAfter/keV << '\n';
+
+  backscatter_file.close();
 
 }
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
