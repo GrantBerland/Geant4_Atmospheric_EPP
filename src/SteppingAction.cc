@@ -384,8 +384,8 @@ void SteppingAction::LogPitchAngle(G4double energyAfter, G4double px, G4double p
   G4AutoLock lock(&aMutex);
 
   std::ofstream backscatter_file;
-  
-  backscatter_file.open("bs.csv", std::ios_base::app);
+
+  backscatter_file.open("bs_" + fRunAction->GetScoringFilename(), std::ios_base::app);
 
   // Encode energy into momentum direction to save some write time
   backscatter_file << px * energyAfter/keV << ','    

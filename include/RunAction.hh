@@ -85,6 +85,8 @@ class RunAction : public G4UserRunAction
     G4double GetWarningEnergy()   { return fWarningEnergy; }
     G4double GetImportantEnergy() { return fImportantEnergy; } 
 
+    G4String GetScoringFilename() { return fHistogramFileName; }
+
   public:
     myHistogram*           fEnergyHist_1;
     myHistogram*           fEnergyHist2D_1;
