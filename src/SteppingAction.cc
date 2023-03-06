@@ -271,15 +271,15 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
         // written to a results file per simulation run
     	
 	// Gets energy delta of particle over step length
-    	G4double energyBefore = step->GetPreStepPoint()->GetKineticEnergy(); 
-    	G4double energyAfter  = step->GetPostStepPoint()->GetKineticEnergy();
+    	G4double energyBefore = track->GetWeight() * step->GetPreStepPoint()->GetKineticEnergy(); 
+    	G4double energyAfter  = track->GetWeight() * step->GetPostStepPoint()->GetKineticEnergy();
 	
 	//G4double energyDep  = energyBefore - energyAfter;
 
 	// This line shouldn't be hit but it's a good check either way 
 	if( energyBefore < energyAfter) throw std::runtime_error("Particle gained energy!");
 
-	G4double energyDep = step->GetTotalEnergyDeposit();
+	G4double energyDep = track->GetWeight() * step->GetTotalEnergyDeposit();
 	
 	// Gets altitude of particle
       	G4double zPos = track->GetPosition().z();

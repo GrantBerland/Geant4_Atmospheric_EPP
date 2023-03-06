@@ -238,7 +238,9 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   // momentum direction - (px, py, pz) []
   // energy 		- E [keV]
   ParticleSample* r = new ParticleSample();
- 
+
+  //TODO: add GCR and X-ray flare spectra 
+
   // Generator method to fill ParticleSample struct
   switch(fSourceType)
   {
