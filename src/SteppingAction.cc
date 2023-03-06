@@ -262,6 +262,17 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
       }
 
 
+      if(flag == 1)
+      {
+
+            if(track->GetTrackID() > 1)
+            { 
+                G4String CreatorProcess = track->GetCreatorProcess()->GetProcessName();
+
+                std::cout << CreatorProcess << ", " << track->GetWeight() << std::endl;
+            }
+      }
+
 
 
       if(flag > 0)
@@ -270,16 +281,19 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
         // Adds energy deposition to vector owned by RunAction, which is
         // written to a results file per simulation run
     	
+        G4double weight = track->GetWeight();
+
+
 	// Gets energy delta of particle over step length
-    	G4double energyBefore = track->GetWeight() * step->GetPreStepPoint()->GetKineticEnergy(); 
-    	G4double energyAfter  = track->GetWeight() * step->GetPostStepPoint()->GetKineticEnergy();
+    	G4double energyBefore = step->GetPreStepPoint()->GetKineticEnergy(); 
+    	G4double energyAfter  = step->GetPostStepPoint()->GetKineticEnergy();
 	
 	//G4double energyDep  = energyBefore - energyAfter;
 
 	// This line shouldn't be hit but it's a good check either way 
 	if( energyBefore < energyAfter) throw std::runtime_error("Particle gained energy!");
 
-	G4double energyDep = track->GetWeight() * step->GetTotalEnergyDeposit();
+	G4double energyDep = step->GetTotalEnergyDeposit();
 	
 	// Gets altitude of particle
       	G4double zPos = track->GetPosition().z();
@@ -293,14 +307,14 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 	{
 	  // Arguments:
 	  // altitude, energy lost, current energy before loss calculation, particle type
-	  LogEnergyToSpecificHistogram(altitudeAddress, energyDep, energyBefore, flag);
+	  LogEnergyToSpecificHistogram(altitudeAddress, weight * energyDep, energyBefore, flag);
 	}
         else if(altitudeAddress >= 500) 
             // escape outside simulation, top boundary 
 	{
 	  // Arguments:
 	  // altitude, current energy, current energy, particle type
-	  LogEnergyToSpecificHistogram(500, energyAfter, energyAfter, flag);
+	  LogEnergyToSpecificHistogram(500, weight * energyAfter, energyAfter, flag);
 
           // Log pitch angle of backscattered electrons with energy
           if(flag == 1) 
@@ -317,7 +331,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
         {  
           // Arguments:
 	  // altitude, current energy, current energy, particle type
-	  LogEnergyToSpecificHistogram(0, energyAfter, energyAfter, flag);
+	  LogEnergyToSpecificHistogram(0, weight * energyAfter, energyAfter, flag);
 	  track->SetTrackStatus(fStopAndKill);
 	}
         //track->GetNextVolume() == nullptr
@@ -326,7 +340,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
         {
           // Arguments:
 	  // altitude, current energy, current energy, particle type
-	  LogEnergyToSpecificHistogram(altitudeAddress, energyAfter, energyAfter, flag);
+	  LogEnergyToSpecificHistogram(altitudeAddress, weight * energyAfter, energyAfter, flag);
 	  track->SetTrackStatus(fStopAndKill);
 	}
       }
@@ -362,14 +376,14 @@ void SteppingAction::LogEnergyToSpecificHistogram(G4int histogramAddress, G4doub
       
       // Electron and positron case
       fRunAction->fEnergyHist_1->AddCountToBin(histogramAddress, entry1/keV);
-      fRunAction->fEnergyHist2D_1->AddCountTo2DHistogram(histogramAddress, entry2/keV);
+      fRunAction->fEnergyHist2D_1->AddCountTo2DHistogram(histogramAddress, entry2/keV, entry1/keV);
       break;
     
     case(2):
 
       // Photon case
       fRunAction->fEnergyHist_2->AddCountToBin(histogramAddress, entry1/keV);
-      fRunAction->fEnergyHist2D_2->AddCountTo2DHistogram(histogramAddress, entry2/keV);
+      fRunAction->fEnergyHist2D_2->AddCountTo2DHistogram(histogramAddress, entry2/keV, entry1/keV);
       break;
     
     default:

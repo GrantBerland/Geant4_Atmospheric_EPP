@@ -36,7 +36,11 @@ public:
   void AddCountToBin(unsigned int, double);
 
 
+  // Used to record number flux
   void AddCountTo2DHistogram(unsigned int, double);
+  
+  // Used to record energy flux
+  void AddCountTo2DHistogram(unsigned int, double, double);
 
   // Writes vector to file name provided
   void WriteHistogramToFile(std::string);
@@ -149,6 +153,20 @@ inline void myHistogram::AddCountTo2DHistogram(unsigned int address1, double val
     if(binEdges[i] > value)
     { 
       twoDhistogramArray[address1][i] += 1;
+      break; 
+    }
+  }
+
+}
+
+inline void myHistogram::AddCountTo2DHistogram(unsigned int address1, double value, double histogramValue)
+{
+
+  for(unsigned int i = 0; i < N_BIN_EDGES; i++)
+  {   
+    if(binEdges[i] > value)
+    { 
+      twoDhistogramArray[address1][i] += histogramValue;
       break; 
     }
   }
