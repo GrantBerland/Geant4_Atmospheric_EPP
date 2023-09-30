@@ -262,18 +262,6 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
       }
 
 
-      if(flag == 1)
-      {
-
-            if(track->GetTrackID() > 1)
-            { 
-                G4String CreatorProcess = track->GetCreatorProcess()->GetProcessName();
-
-                std::cout << CreatorProcess << ", " << track->GetWeight() << std::endl;
-            }
-      }
-
-
 
       if(flag > 0)
       {
